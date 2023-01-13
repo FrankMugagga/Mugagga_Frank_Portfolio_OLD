@@ -1,0 +1,42 @@
+#top_navigation { 
+    width:1440px;
+    height:72px;
+    position: absolute;
+    color:red;
+ }
+
+ #logo_placeholder{  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 143px;
+    top: calc(50% - 40px/2);
+ }
+
+ #mylogo { 
+    width:76px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20pc;
+    display: flex;
+    align-items: center;
+    color:#6070FF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+ }
+
+ #main1 { 
+    position: absolute;
+    width: 1440px;
+    height: 846px;
+    left: 0px;
+    top: 71px;
+  }
