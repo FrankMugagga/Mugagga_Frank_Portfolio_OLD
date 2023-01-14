@@ -141,9 +141,11 @@ h1 {
   width: 170.17px;
   height: 20px;
   top: 470px;
-  left: 24px;
+  left: 2px;
   order: 3;
   flex-grow: 0;
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0%;
 }
