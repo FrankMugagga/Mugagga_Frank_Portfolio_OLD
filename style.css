@@ -1,61 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap');
+.wrapper{
+  position: relative;
+  width: 375px;
+  height: 5410px;
+  top: -1883px;
+  left: 11282px;
+  color: #F7F7F9;
+  background-color: red;
+  background-image: url('images/background1.png');
 
-#main {
-  width: 30%;
-  height: 80vh;
-}
-
-#logo {
-  font-family: 'Poppins', sans-serif;
-  width: 327px;
-  height: 150px;
-  top: 114px;
-  left: 24px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  display: flex;
-  align-items: center;
-  color: "#6070FF";
-}
-
-h2 {
-  width: 327px;
-  height: 150px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: "#172B4D";
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-#letscon {
-  width: 200px;
-  height: 24px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  flex: none;
-  order: 1;
-}
-
-content {
-  width: 327px;
-  height: 146px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
