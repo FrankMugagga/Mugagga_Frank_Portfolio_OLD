@@ -639,6 +639,10 @@ h1 {
   color: #396df2;
 }
 
+.resume_button:hover {
+  color: magenta;
+}
+
 .skill_set {
   display: flex;
   flex-direction: column;
