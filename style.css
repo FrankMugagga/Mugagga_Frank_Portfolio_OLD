@@ -179,10 +179,11 @@ h1 {
   flex-grow: 0;
   list-style: none;
   justify-content: space-between;
+  /*background: #505f79;*/
 }
 
 .socials {
-  padding: 8px;
+  padding: 9px;
   width: 40px;
   height: 40px;
   border-radius: 8px;
@@ -418,10 +419,10 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 12px 24px;
-  gap: 1px;
-  width: 135px;
-  height: 35px;
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
   left: 1px;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -637,6 +638,10 @@ h1 {
   background: none;
   letter-spacing: 0.03em;
   color: #396df2;
+}
+
+.resume_button:hover {
+  color: magenta;
 }
 
 .skill_set {
