@@ -1,11 +1,22 @@
-.wrapper {
-  display: flex;
-  flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.phone_template {
   width: 375px;
   height: 5410px;
   top: -1883px;
   left: 11282px;
-  color: '#5a5ac4';
+  background: #f7f7f9;
+}
+
+.head_template {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 718px;
+  left: 1px;
+  top: 1px;
+  background-image: url("images/header-background.png");
+  background-repeat: no-repeat;
 }
 
 .statusb {
@@ -49,20 +60,23 @@
   position: absolute;
 }
 
+a:hover {
+  color: darkorange;
+  text-decoration: none;
+}
+
 .logolink {
   width: 76px;
   height: 20px;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   display: flex;
-  align-items: center;
-  text-align: center;
-  color: '#6070FF';
+  color: '#6070ff';
   flex: none;
   flex-grow: 0;
   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 .sidebut {
@@ -84,13 +98,13 @@
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
-  position: relative;
   width: 375px;
   height: 604px;
   left: calc(50% - 375px / 2);
   top: 92px;
   background-image: url("images/background1.png");
   background-repeat: no-repeat;
+  order: 0;
 }
 
 h1 {
@@ -103,13 +117,14 @@ h1 {
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: '#172B4D';
+  color: #172b4d;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .p1 {
+  display: flex;
   width: 327px;
   height: 146px;
   font-family: 'Poppins', sans-serif;
@@ -123,6 +138,19 @@ h1 {
   flex-grow: 0;
 }
 
+.lets_connet_cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px;
+  gap: 8px;
+  width: 117px;
+  height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .p2 {
   width: 120px;
   height: 24px;
@@ -131,21 +159,29 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: '#7F8CFF';
+  color: #7f8cff;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .social_media {
-  width: 170.17px;
-  height: 20px;
-  top: 470px;
-  left: 2px;
-  order: 3;
-  flex-grow: 0;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px;
+  width: 200px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  list-style: none;
   justify-content: space-between;
-  list-style-type: none;
-  padding-left: 1%;
+}
+
+.socials {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
 }
