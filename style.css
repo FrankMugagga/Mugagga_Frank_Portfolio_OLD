@@ -295,6 +295,7 @@ h1 {
   flex: none;
   order: 2;
   flex-grow: 0;
+  color: #7a869a;
 }
 
 .header_details_year {
@@ -303,6 +304,7 @@ h1 {
   flex: none;
   order: 4;
   flex-grow: 0;
+  color: #7a869a;
 }
 
 .paragraph_details {
