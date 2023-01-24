@@ -815,6 +815,11 @@ h1 {
 }
 
 .contact_section {
+  background: #fff;
+ 
+}
+
+.im_backg {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -977,4 +982,5 @@ textarea::placeholder {
   bottom: 8px;
   background: #0d151e;
   border-radius: 10px;
+  margin-top: 32px;
 }
