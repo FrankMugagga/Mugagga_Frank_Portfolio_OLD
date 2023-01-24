@@ -832,11 +832,11 @@ h1 {
   border-top-left-radius: 50px;
 }
 
-.logo1{
+.logo1 {
   position: absolute;
-  right:0;
   top: 3em;
 }
+
 .contact_header {
   width: 801px;
   height: 56px;
