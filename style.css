@@ -210,7 +210,6 @@ h1 {
   flex-grow: 0;
 }
 
-
 .left_block {
   display: flex;
   flex-direction: column;
@@ -228,7 +227,6 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0px;
   gap: 1px;
   width: 295px;
   height: 110px;
@@ -254,7 +252,6 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
   gap: 1px;
   width: 250px;
   height: 32px;
@@ -262,19 +259,17 @@ h1 {
   order: 1;
   bottom: 1px;
   flex-grow: 0;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .spec {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   flex: 1;
   order: 0;
   flex-grow: 1;
-  padding: 0px opx;
   text-align: center;
 }
 
@@ -283,7 +278,6 @@ h1 {
   width: 90px;
   height: 24px;
   margin-right: 20px;
-  margin-left: 0px;
   color: #344563;
   flex: none;
   order: 0;
@@ -293,7 +287,6 @@ h1 {
 .header_details .header_details_name {
   list-style: none;
   color: #344563;
-  margin-left: 0px;padding-left: 0px;
 }
 
 .header_details_specification {
@@ -337,7 +330,6 @@ h1 {
   grid-area: 8px;
   width: 280px;
   height: 24px;
-  /*justify-content: space-between;*/
   list-style: none;
   text-decoration: none;
 }
@@ -362,21 +354,20 @@ h1 {
   margin-right: 10px;
 }
 
-.html_lang { 
-  width: 45px; 
+.html_lang {
+  width: 45px;
 }
 
-.ruby_lang {  
-  width: 100px;  
+.ruby_lang {
+  width: 100px;
 }
 
-
-.css_lang { 
-  width: 28px; 
+.css_lang {
+  width: 28px;
 }
 
-.javascript_lang { 
-  width: 89px;  
+.javascript_lang {
+  width: 89px;
 }
 
 .see_project {
@@ -895,7 +886,6 @@ textarea::placeholder {
 @media screen and (min-width: 786px) {
   .phone_template {
     width: 1440px;
-    
   }
 
   .head_template {
@@ -905,7 +895,7 @@ textarea::placeholder {
   }
 
   .app_head_nav {
-    width: 1100px;
+    width: 1440px;
     height: 72px;
   }
 
@@ -949,7 +939,7 @@ textarea::placeholder {
 
   .main {
     padding: 140px;
-    width: 1100px;
+    width: 1440px;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -959,7 +949,7 @@ textarea::placeholder {
   }
 
   .p1 {
-    width: 800px;
+    width: 920px;
     height: 98px;
     font-size: 20px;
     line-height: 28px;
@@ -969,9 +959,9 @@ textarea::placeholder {
   .works_section {
     display: grid;
     grid-template-columns: auto;
-    padding: 80px;
+    padding: 142px;
     gap: 142px;
-    width: 1100px;
+    width: 1440px;
     height: 2694px;
     top: 917px;
   }
@@ -979,7 +969,7 @@ textarea::placeholder {
   .card_works_one {
     display: flex;
     flex-direction: row;
-    width: 1100px;
+    width: 1156px;
     height: 496px;
   }
 
@@ -995,15 +985,15 @@ textarea::placeholder {
   }
 
   .left_block {
-    width: 450px;
-    height: 300px;
-    padding: 24px; /*ackground: red;*/
+    width: 544px;
+    height: 445px;
+    padding: 24px;
   }
 
- .card_two_four {
-  display: flex;
-  flex-direction: row-reverse;
- }
+  .card_two_four {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
   .paragraph_details {
     width: 400px;
@@ -1011,30 +1001,30 @@ textarea::placeholder {
 
   .about_self {
     width: 1440px;
-    height: 600px;
+    height: 924px;
     display: flex;
-    flex-direction: row; border: 2px solid blue;
+    flex-direction: row;
   }
 
   .top_information {
     width: 447px;
-    height: 360px;
+    height: 392px;
     padding-left: 80px;
   }
 
   .skill_set {
-    width: 450px;
-    height: 360px;
+    width: 684px;
+    margin-top: 100px;
     display: flex;
   }
 
   .languages_frame {
-    width: 450px;
+    width: 684px;
     height: 216px;
   }
 
   .lang_menu {
-    width: 450px;
+    width: 684px;
     height: 72px;
   }
 
@@ -1046,12 +1036,12 @@ textarea::placeholder {
   }
 
   .lan_jav {
-    width: 118px;
-    height: 116px;
+    width: 122px;
+    height: 120px;
   }
 
   .frame_works {
-    width: 450px;
+    width: 684px;
     height: 72px;
   }
 
@@ -1059,11 +1049,15 @@ textarea::placeholder {
     width: 1440px;
     height: 846px;
     box-sizing: border-box;
-    border: 2px solid red;
+    align-items: center;
   }
 
   .im_backg {
     background-size: cover;
     width: 1440px;
+  }
+
+  .home_indicator {
+    display: none;
   }
 }
