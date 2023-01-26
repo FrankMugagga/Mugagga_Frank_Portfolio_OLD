@@ -10,21 +10,26 @@
 
 .head_template {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   width: 375px;
   height: 718px;
   left: 1px;
   top: 1px;
   background-image: url("images/header-background.png");
   background-repeat: no-repeat;
+  border: 2px solid red;
 }
-
-.nav_bar {
-  width: 375px;
-  height: 48px;
-  top: 44px;
-  position: relative;
-}
+.app_head_nav {
+  position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 48px;
+   width: 375px;
+   top: 44px; padding: 5px;
+   /*background: #6070ff;*/
+ }
 
 .logo {
   width: 100px;
@@ -49,18 +54,22 @@
   flex: none;
   flex-grow: 0;
   font-family: 'Poppins', sans-serif;
+}
+
+
+a {
   text-decoration: none;
 }
 
-.logolink:focus {
+a:focus {
   color: fuchsia;
 }
 
-.logolink:active {
+a:active {
   color: chartreuse;
 }
 
-.logolink:hover {
+a:hover {
   color: darkorange;
 }
 
@@ -77,19 +86,26 @@
   border-radius: 8px;
 }
 
+.item_nav {
+  display: none;
+  /*background: red;*/
+}
+
 .main {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
-  width: 375px;
-  height: 604px;
+  width: 370px;
+  height: 400px;
   left: calc(50% - 375px / 2);
   top: 92px;
   background-image: url("images/background1.png");
   background-repeat: no-repeat;
   order: 0;
+  border: 3px solid green;
 }
 
 h1 {
@@ -200,7 +216,7 @@ h1 {
 .portfolio_snap_1 {
   width: 295px;
   height: 220px;
-  background: url('images/project/card_works_one.png');
+  /*background: url('images/project/card_works_one.png');*/
   border-radius: 8px;
   flex: none;
   order: o;
@@ -463,7 +479,7 @@ h1 {
 .see_project_text:link {
   color: #396df2;
 }
-
+/*
 .card_works_two {
   box-sizing: border-box;
   display: flex;
@@ -543,7 +559,7 @@ h1 {
   flex: none;
   order: o;
   flex-grow: 0;
-}
+}*/
 
 .about_self {
   display: flex;
@@ -984,4 +1000,208 @@ textarea::placeholder {
   background: #0d151e;
   border-radius: 10px;
   margin-top: 6px;
+}
+
+@media screen and (min-width: 786px) {
+.phone_template  {
+  width: 1100px;
+}
+
+.head_template {
+  width: 1100px;
+  background-size: cover;
+  border: 2px solid black;
+
+  /*isplay: flex;
+  flex-direction: column;
+ 
+  height: 718px;
+  left: 1px;
+  top: 1px;
+  background-image: url("images/header-background.png");
+  background-repeat: no-repeat;
+  */
+}
+
+
+.app_head_nav {
+  width: 1100px;
+  height: 72px;
+  background: red;
+ 
+  
+  }
+
+.logo {
+  top: 16px;
+  left: 143px;   
+}
+
+.sidebut {
+    display: none;
+}
+ 
+
+.item_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 259px;
+    height: 40px;
+    left: 1039px; background: green;
+   
+}
+
+.items {
+  width: 63px;
+height: 20px;
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #344563;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.main {
+  
+  /*border: 2px solid red;
+  width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  gap: 12px;
+  
+  height: 604px;
+  left: calc(50% - 375px / 2);
+  top: 92px;
+  /*background-image: url("images/background1.png");*/
+  width: 1100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: #b3bac5;
+  /*background: red;
+  order: 0;*/
+}
+
+h1 {
+  width: 410px;
+  height: 122px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.37px;
+  display: flex;
+  align-items: center;
+  color: #091E32;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.p {
+  width: 1100px;
+height: 98px;
+font-size: 20px;
+line-height: 28px;
+color: #344563;
+
+}
+
+
+
+
+
+.works_section {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 80px;
+    gap: 142px; 
+    width: 1100px;
+    height: 2694px;
+    top: 917px;
+    /*background: red;*/
+  }
+
+.card_works_one {
+  display: flex;
+  flex-direction: row;
+  width: 1024px;
+  height: 496px;
+  /*background: red;*/
+}
+
+.portfolio_snap_1 {
+  width: 544px;
+  height: 448px;
+  border-radius: 8px;
+  left: 24px;
+  top: 24px;
+  flex: none;
+  order: o;
+  flex-grow: 0;
+}
+
+.left_block {
+  width: 544px;
+  height: 300px;
+  padding: 24px;
+  /*left: 590px;
+  top: 24px;
+gap: 24px;*/
+}
+
+.paragraph_details {
+  width: 400px;
+
+}
+
+.about_self {
+  width: 1024px;
+  height: 600px;
+  /*padding: 142px;*/
+  display: flex;
+  flex-direction: row;
+}
+
+.top_information {
+  width: 447px;
+  height: 392px;
+
+}
+
+.skill_set {
+  width: 500px;
+  height:600px;
+  display: flex;
+  border: 2px solid red;
+}
+
+.languages_frame {
+  width: 400px;
+}
+
+
+.contact_section {
+  width: 1100px;
+  height: 846px;
+  padding: 80px;
+}
+
+.im_backg {
+  background-size: cover;
+  width: 1100px;
+}
+
 }
