@@ -210,6 +210,7 @@ h1 {
   flex-grow: 0;
 }
 
+
 .left_block {
   display: flex;
   flex-direction: column;
@@ -227,7 +228,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1px;
+  padding: 0px;
   gap: 1px;
   width: 295px;
   height: 110px;
@@ -252,16 +253,16 @@ h1 {
 .header_details {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 1px;
+  align-items: flex-start;
+  padding: 0px;
   gap: 1px;
-  width: 236px;
+  width: 250px;
   height: 32px;
   flex: none;
   order: 1;
   bottom: 1px;
   flex-grow: 0;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .spec {
@@ -273,13 +274,16 @@ h1 {
   flex: 1;
   order: 0;
   flex-grow: 1;
-  padding: 1px opx;
+  padding: 0px opx;
   text-align: center;
 }
 
 .header_details_name {
-  width: 55px;
+  display: flex;
+  width: 90px;
   height: 24px;
+  margin-right: 20px;
+  margin-left: 0px;
   color: #344563;
   flex: none;
   order: 0;
@@ -288,13 +292,14 @@ h1 {
 
 .header_details .header_details_name {
   list-style: none;
-  margin: 0;
   color: #344563;
+  margin-left: 0px;padding-left: 0px;
 }
 
 .header_details_specification {
-  width: 98px;
+  width: 123px;
   height: 20px;
+  margin-right: 20px;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -330,14 +335,14 @@ h1 {
   align-items: center;
   padding: 0;
   grid-area: 8px;
-  width: 250px;
+  width: 280px;
   height: 24px;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   list-style: none;
   text-decoration: none;
 }
 
-.html_lang {
+.langs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -349,50 +354,29 @@ h1 {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
-  padding: 4px 12px;
+  padding: 3px 3px;
   width: 45px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
+  margin-right: 10px;
 }
 
-.css_lang {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  padding: 4px 12px;
-  width: 28px;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
+.html_lang { 
+  width: 45px; 
 }
 
-.javascript_lang {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  padding: 4px 12px;
-  width: 89px;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
-  text-align: center;
+.ruby_lang {  
+  width: 100px;  
+}
+
+
+.css_lang { 
+  width: 28px; 
+}
+
+.javascript_lang { 
+  width: 89px;  
 }
 
 .see_project {
@@ -400,7 +384,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 12px;
+  padding: 5px;
   gap: 10px;
   width: 124px;
   height: 48px;
@@ -911,10 +895,11 @@ textarea::placeholder {
 @media screen and (min-width: 786px) {
   .phone_template {
     width: 1440px;
+    
   }
 
   .head_template {
-    width: 1100px;
+    width: 1440px;
     background-size: cover;
     border-bottom-left-radius: 100px;
   }
@@ -986,7 +971,7 @@ textarea::placeholder {
     grid-template-columns: auto;
     padding: 80px;
     gap: 142px;
-    width: 1440px;
+    width: 1100px;
     height: 2694px;
     top: 917px;
   }
@@ -994,7 +979,7 @@ textarea::placeholder {
   .card_works_one {
     display: flex;
     flex-direction: row;
-    width: 1024px;
+    width: 1100px;
     height: 496px;
   }
 
@@ -1010,20 +995,25 @@ textarea::placeholder {
   }
 
   .left_block {
-    width: 544px;
+    width: 450px;
     height: 300px;
-    padding: 24px;
+    padding: 24px; /*ackground: red;*/
   }
+
+ .card_two_four {
+  display: flex;
+  flex-direction: row-reverse;
+ }
 
   .paragraph_details {
     width: 400px;
   }
 
   .about_self {
-    width: 1100px;
+    width: 1440px;
     height: 600px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; border: 2px solid blue;
   }
 
   .top_information {
@@ -1066,7 +1056,7 @@ textarea::placeholder {
   }
 
   .contact_section {
-    width: 1100px;
+    width: 1440px;
     height: 846px;
     box-sizing: border-box;
     border: 2px solid red;
@@ -1074,6 +1064,6 @@ textarea::placeholder {
 
   .im_backg {
     background-size: cover;
-    width: 1100px;
+    width: 1440px;
   }
 }
