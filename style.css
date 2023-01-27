@@ -7,6 +7,7 @@
   top: -1883px;
   left: 11282px;
   background: #f7f7f9;
+  border: 1px solid#ebebff;
 }
 
 .head_template {
@@ -202,13 +203,7 @@ h1 {
   flex: none;
   order: 0;
   flex-grow: 0;
-  transition-property: border;
-  transition-duration: 3s;
-}
-
-.card_works_one:hover {
-  border: 20px solid lime;
-}
+ }
 
 .portfolio_snap_1 {
   width: 295px;
@@ -219,11 +214,6 @@ h1 {
   flex-grow: 0;
   transition-timing-function: ease;
   transition-duration: 2s;
-}
-
-.portfolio_snap_1:hover {
-  border: 10px solid green;
-  transform: translate(180px) rotateX(60deg);
 }
 
 .left_block {
@@ -901,14 +891,14 @@ textarea::placeholder {
   }
 
   .head_template {
-    width: 1440px;
+    width: 1435px;
     height: 916px;
     background-size: cover;
     border-bottom-left-radius: 100px;
   }
 
   .app_head_nav {
-    width: 1440px;
+    width: 1350px;
     height: 72px;
     padding-left: 142px;
     padding-right: 142px;
@@ -957,9 +947,9 @@ textarea::placeholder {
     padding-right: 260px;
     padding-top: 200px;
     padding-bottom: 255px;
-    width: 1440px;
+    width: 1435px;
     background: url("images/Header_deskV.png");
-    background-size: 1439px;
+    background-size: 1290px;
     background-repeat: no-repeat;
   }
 
@@ -1073,8 +1063,9 @@ textarea::placeholder {
   }
 
   .about_self {
+    box-sizing: border-box;
     display: flex;
-    width: 1440px;
+    width: 1435px;
     height: 600px;
     padding-left: 142px;
     padding-top: 142px;
@@ -1148,13 +1139,15 @@ textarea::placeholder {
   }
 
   .contact_section {
+    box-sizing: border-box;
     width: 1440px;
-    height: 920px;
+    height: 846px;
     box-sizing: border-box;
     align-items: center;
     padding: 75px;
     border-top-left-radius: 90px;
     background: #6070ff;
+    margin-top: 134px;
   }
 
   .im_backg {
