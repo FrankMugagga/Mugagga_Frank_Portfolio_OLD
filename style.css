@@ -959,7 +959,7 @@ textarea::placeholder {
     padding-bottom: 255px;
     width: 1440px;
     background: url("images/Header_deskV.png");
-    background-size: cover;
+    background-size: 1439px;
     background-repeat: no-repeat;
   }
 
@@ -1056,13 +1056,13 @@ textarea::placeholder {
     width: 496px;
     height: 70px;
     margin-top: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .language_list {
     width: 316px;
     height: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .see_project {
