@@ -219,11 +219,11 @@ h1 {
   flex-grow: 0;
   transition-timing-function: ease;
   transition-duration: 2s;
- }
+}
 
 .portfolio_snap_1:hover {
   border: 10px solid green;
-  transform:translate(180px) rotateX(60deg);
+  transform: translate(180px) rotateX(60deg);
 }
 
 .left_block {
