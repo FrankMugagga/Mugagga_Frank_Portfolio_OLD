@@ -55,6 +55,10 @@
   flex-grow: 0;
 }
 
+.logolink:hover {
+  transform: rotate(60deg);
+}
+
 a {
   text-decoration: none;
 }
@@ -198,6 +202,12 @@ h1 {
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition-property: border;
+  transition-duration: 3s;
+}
+
+.card_works_one:hover {
+  border: 20px solid lime;
 }
 
 .portfolio_snap_1 {
@@ -207,6 +217,13 @@ h1 {
   flex: none;
   order: o;
   flex-grow: 0;
+  transition-timing-function: ease;
+  transition-duration: 2s;
+ }
+
+.portfolio_snap_1:hover {
+  border: 10px solid green;
+  transform:translate(180px) rotateX(60deg);
 }
 
 .left_block {
@@ -318,6 +335,7 @@ h1 {
   flex: 1;
   order: 0;
   flex-grow: 0;
+  margin-bottom: 4px;
 }
 
 .language_list {
@@ -1171,9 +1189,5 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .home_indicator {
-    margin-bottom: 80px;
   }
 }
