@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
-* {
-  border: solid red;
-}
-
 body {
   box-sizing: border-box;
   width: auto;
@@ -228,8 +224,12 @@ h1 {
   flex-grow: 0;
 }
 
+.snap_cont {
+  width: 100%;
+}
+
 .portfolio_snap_1 {
-  width: 120%;
+  width: 99%;
   height: 220px;
   border-radius: 8px;
   flex: none;
@@ -241,7 +241,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 380%;
+  width: 100%;
   height: 288px;
   flex: none;
   order: 1;
@@ -260,7 +260,7 @@ h1 {
 }
 
 .works_header {
-  width: 295px;
+  width: 100%;
   height: 70px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -335,7 +335,7 @@ h1 {
 }
 
 .paragraph_details {
-  width: 26%;
+  width: 100%;
   height: 76px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -739,7 +739,7 @@ h1 {
 }
 
 .contact_header {
-  width: 801px;
+  width: 100%;
   height: 56px;
   left: -213px;
   top: 4734px;
@@ -754,7 +754,7 @@ h1 {
 }
 
 .contact_para {
-  width: 327px;
+  width: 80%;
   height: 102px;
   left: 24px;
   top: 4802px;
@@ -1042,7 +1042,7 @@ textarea::placeholder {
   }
 
   .header_details_name {
-    width: 75px;
+    width: 90px;
     height: 24px;
   }
 
