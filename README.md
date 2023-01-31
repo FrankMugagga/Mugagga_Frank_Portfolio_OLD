@@ -87,7 +87,7 @@ Describe between 1-3 key features of the application.
 
 Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link]( https://frankmugagga.github.io/Mugagga_Frank_Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
