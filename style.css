@@ -63,10 +63,6 @@ body {
   flex-grow: 0;
 }
 
-.logolink:hover {
-  transform: rotate(60deg);
-}
-
 a {
   text-decoration: none;
 }
@@ -94,6 +90,19 @@ a:hover {
 .item_nav {
   display: none;
 }
+
+.menu_nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    mix-blend-mode: multiply;
+    background-color: #6070ff;
+    background-size: contain;
+  }
+
 
 .main {
   box-sizing: border-box;
@@ -233,7 +242,7 @@ h1 {
   height: 220px;
   border-radius: 8px;
   flex: none;
-  order: o;
+  order: 0;
   flex-grow: 0;
 }
 
@@ -354,7 +363,6 @@ h1 {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  grid-area: 8px;
   width: 280px;
   height: 24px;
   list-style: none;
@@ -935,7 +943,7 @@ textarea::placeholder {
     left: 24px;
     top: 24px;
     flex: none;
-    order: o;
+    order: 0;
     flex-grow: 0;
   }
 

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    
 </head>
 
 <body>
@@ -22,11 +23,7 @@
                    
                 <nav class="logo">
                     <a href="#" class="logolink">My logo</a>
-                </nav> 
-
-                <nav class="sidebut">
-                    <a href="#"> <img src="images/Enabled.png" alt="menu button"> </a>
-                </nav>               
+                </nav>                           
 
                 <ul class="item_nav">
                     <li class="items">
@@ -39,6 +36,10 @@
                         <a href="#"> Contact </a>
                     </li> 
                 </ul>
+
+                <nav class="sidebut">
+                    <a href="" id="menu"> <img src="images/Enabled.png" alt="menu button"> </a>
+                </nav> 
 
             </header> 
 
@@ -91,12 +92,36 @@
 
                 </div>
 
+            </div>
+
+
+            <button id="try">click</button>
+            <div class="menu_nav">
+
+                <nav >
+                    <div class='exit'>
+                        <img src="images/cross.png" alt="cancel">
+                    </div>
+        
+                    <ul >
+                        <li>  <a href="">Portfolio</a>    </li>
+                        <li> <a href="">About</a> </li>  
+                        <li> <a href="">contact_header</a> </li>               
+                    </ul>       
+                </nav>
 
             </div>
+            
+
         </div>
 
+        
 
-        <div class="works_section">
+
+        
+
+
+        <div class="works_section" id="works_portfolio">
 
             <div class="card_works_one">
 
@@ -331,7 +356,7 @@
 
 
 
-        <section class="about_self">
+        <section class="about_self" id="about">
 
             <div class="top_information">
 
@@ -465,7 +490,7 @@
         </section>
 
       
-        <section class="contact_section">
+        <section class="contact_section" id="contact">
             <div class="im_backg">
                
               <h1 class="contact_header">
@@ -509,6 +534,8 @@
 
 
     </div>
+
+    <script src="portfolio.js"></script>
 
 </body>
 
