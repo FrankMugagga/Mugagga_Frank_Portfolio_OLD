@@ -1,11 +1,21 @@
-/*const hamburger = document.querySelector('hamburger');
-const navmenu = document.querySelector('hamburger');
+const menuselect = document.querySelector('.sidebut');
+const openMenu = document.querySelector('.menu_nav');
+const closeMenu = document.querySelector('.exit');
 
-hamburger.addEventListener('click', () =>{
-   hamburger.classList.toggle('active');
-   navmenu.classList.toggle('active');
-})*/
+function open() {
+  openMenu.style.display = 'block';
+  openMenu.classList.toggle('open');
+  menuselect.style.visibility = 'hidden';
+  closeMenu.style.visibility = 'visible';
+}
 
-const sidebut = document.querySelector('.sidebut');
+function close() {
+  openMenu.style.display = 'none';
+  openMenu.classList.remove('open');
+  menuselect.style.visibility = 'visible';
+  closeMenu.style.visibility = 'hidden';
+}
 
-sidebut.addEventListener('click', () => sidebut.classList.toggle('active'));
+menuselect.addEventListener('click', open);
+closeMenu.addEventListener('click', close);
+openMenu.addEventListener('click', close);
