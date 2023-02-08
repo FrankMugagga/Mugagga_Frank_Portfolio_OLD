@@ -922,7 +922,7 @@ textarea::placeholder {
     left: 1039px;
   }
 
-   .items {
+  .items {
     width: 63px;
     height: 20px;
     font-family: "Poppins", sans-serif;
@@ -1086,8 +1086,9 @@ textarea::placeholder {
   }
 
   .text_about {
-    width: 100%; padding-top: 0;
-    height: 114px;border: 2px solid red;
+    width: 100%;
+    padding-top: 0;
+    height: 114px;
   }
 
   .text_parag {
