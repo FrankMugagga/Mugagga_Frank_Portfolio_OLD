@@ -27,6 +27,7 @@ body {
   background-image: url("images/header-background.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  border-bottom-left-radius: 100px;
 }
 
 .app_head_nav {
@@ -51,7 +52,7 @@ body {
 }
 
 .logolink {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   width: 100%;
   height: 5%;
@@ -61,10 +62,6 @@ body {
   color: #6070ff;
   flex: none;
   flex-grow: 0;
-}
-
-.logolink:hover {
-  transform: rotate(60deg);
 }
 
 a {
@@ -95,12 +92,71 @@ a:hover {
   display: none;
 }
 
+.menu_nav {
+  display: none;
+  width: 100%;
+  height: 812px;
+  mix-blend-mode: multiply;
+  background: #6070ff;
+  backdrop-filter: blur(15px);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.exit {
+  width: 100%;
+  margin-top: 44px;
+  display: flex;
+  justify-content: right;
+  height: 48px;
+}
+
+.menu {
+  gap: 8px;
+  width: 351px;
+  height: 184px;
+  left: 12px;
+  top: 90px;
+}
+
+.menu-li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.menu-link {
+  text-decoration: none;
+  height: 24px;
+  left: 0;
+  right: 68px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.menu_footer {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+}
+
 .main {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 24px;
+  padding-left: 24px;
   gap: 12px;
   width: 100%;
   left: calc(50% - 100px / 2);
@@ -113,9 +169,10 @@ a:hover {
 
 h1 {
   width: 100%;
-  padding: 0;
+  padding-top: 120px;
+  padding-left: 24px;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -128,7 +185,7 @@ h1 {
 .p1 {
   display: flex;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -137,6 +194,7 @@ h1 {
   flex: none;
   order: 0;
   flex-grow: 0;
+  padding-left: 24px;
 }
 
 .social_media_connection {
@@ -149,6 +207,7 @@ h1 {
   flex: none;
   order: 0;
   flex-grow: 0;
+  padding-left: 24px;
 }
 
 .lets_connet_cont {
@@ -167,7 +226,7 @@ h1 {
 .p2 {
   width: 300%;
   height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -233,7 +292,7 @@ h1 {
   height: 220px;
   border-radius: 8px;
   flex: none;
-  order: o;
+  order: 0;
   flex-grow: 0;
 }
 
@@ -262,7 +321,7 @@ h1 {
 .works_header {
   width: 100%;
   height: 70px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -289,7 +348,7 @@ h1 {
 }
 
 .spec {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -337,7 +396,7 @@ h1 {
 .paragraph_details {
   width: 100%;
   height: 76px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -354,7 +413,6 @@ h1 {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  grid-area: 8px;
   width: 280px;
   height: 24px;
   list-style: none;
@@ -366,7 +424,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -408,7 +466,7 @@ h1 {
   order: 1;
   flex: 1;
   flex-grow: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -466,7 +524,7 @@ h1 {
 .text_about {
   width: 100%;
   height: 101px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -480,7 +538,7 @@ h1 {
 .text_parag {
   width: 100%;
   height: 20%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -501,7 +559,7 @@ h1 {
   flex: none;
   order: 0;
   flex-grow: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -568,7 +626,7 @@ h1 {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -617,7 +675,7 @@ h1 {
   height: 48px;
   left: 12px;
   top: calc(50% - 48px / 2 - 0.36px);
-  border: 1px solid  #fff;
+  border: 1px solid #fff;
   margin: 1px 16px 1px 1px;
 }
 
@@ -625,7 +683,7 @@ h1 {
   height: 24px;
   left: 76px;
   top: calc(50% - 24px / 2 - 0.36px);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -638,7 +696,7 @@ h1 {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -679,7 +737,7 @@ h1 {
   height: 779px;
   top: 5410px;
   background: #6070ff;
-  background-image: url('images/background1.png');
+  background-image: url("images/background1.png");
   background-repeat: no-repeat;
   border-top-left-radius: 50px;
 }
@@ -689,7 +747,7 @@ h1 {
   height: 56px;
   left: -213px;
   top: 4734px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -697,6 +755,7 @@ h1 {
   color: #fff;
   text-align: center;
   margin-top: 2em;
+  padding-top: 0;
 }
 
 .contact_para {
@@ -704,7 +763,7 @@ h1 {
   height: 102px;
   left: 24px;
   top: 4802px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -733,7 +792,7 @@ input::placeholder {
   left: 16px;
   right: 38px;
   top: calc(50% - 18px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -757,7 +816,7 @@ textarea::placeholder {
   left: 16px;
   top: 15px;
   bottom: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -778,7 +837,7 @@ textarea::placeholder {
   background: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -866,7 +925,7 @@ textarea::placeholder {
   .items {
     width: 63px;
     height: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -878,6 +937,14 @@ textarea::placeholder {
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  .menu_nav {
+    display: none;
+  }
+
+  .exit {
+    display: none;
   }
 
   .main {
@@ -935,7 +1002,7 @@ textarea::placeholder {
     left: 24px;
     top: 24px;
     flex: none;
-    order: o;
+    order: 0;
     flex-grow: 0;
   }
 
@@ -1020,6 +1087,7 @@ textarea::placeholder {
 
   .text_about {
     width: 100%;
+    padding-top: 0;
     height: 114px;
   }
 
@@ -1091,7 +1159,7 @@ textarea::placeholder {
 
   .im_backg {
     background-size: 100%;
-    background-image: url('images/contact_form_background_desk\ .png');
+    background-image: url("images/contact_form_background_desk\ .png");
     width: 100%;
     height: 800.7px;
     border: 0;
@@ -1123,16 +1191,16 @@ textarea::placeholder {
     align-items: center;
   }
 
-  input[type=text],
-  input[tpye=email] {
+  input[type="text"],
+  input[tpye="email"] {
     transition: width 2s;
   }
 
-  input[type=text]:hover {
+  input[type="text"]:hover {
     width: 150%;
   }
 
-  input[type=email]:hover {
+  input[type="email"]:hover {
     width: 150%;
   }
 
