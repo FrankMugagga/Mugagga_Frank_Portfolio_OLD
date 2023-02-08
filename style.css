@@ -93,11 +93,13 @@ a:hover {
 }
 
 .menu_nav {
-  /*display: none;*/
+  display: none;
   width: 100%;
-  height: 812px;background: #6070ff;
-  /*mix-blend-mode: multiply;*/
-  position: absolute;
+  height: 812px;
+  mix-blend-mode: multiply;
+  background: #6070ff;
+  backdrop-filter: blur(15px);
+  position: fixed;
   left: 0px;
   right: 0px;
   top: 0px;
@@ -120,7 +122,7 @@ a:hover {
 
   .menu {
     gap: 8px;    
-    position: absolute;
+   /* position: absolute;*/
     width: 351px;
     height: 184px;
     left: 12px;
@@ -147,7 +149,7 @@ a:hover {
   color: #FFFFFF;
 }
 
-  .menu_footer{
+.menu_footer{
  
 left: 0px;
 right: 0px;
@@ -158,7 +160,7 @@ mix-blend-mode: multiply;
 
   }
 
-*/
+
 .main {
   box-sizing: border-box;
   display: flex;
@@ -769,7 +771,7 @@ h1 {
   width: 80%;
   height: 102px;
   left: 24px;
-  top: 4802px;
+  /*top: 4802px;*/
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
