@@ -3,10 +3,9 @@
 
 <div align="center">
  
-  <img src="#" alt="logo" width="140"  height="auto" />
-  <br/>
+ 
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Frank Mugagga Portfolio</b></h3>
 
 </div>
 
@@ -51,25 +50,9 @@ Describe the tech stack and include only the relevant sections that apply to you
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>HTML, CSS, JAVASCRIPT</li>
   </ul>
 </details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-
 
 ### Key Features <a name="key-features"></a>
 
