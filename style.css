@@ -884,10 +884,8 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
   width: 96%;
-  height: 100%;
-  /*padding: 60px 16px 0 16px;*/
+  padding: 60px 16px 0 16px;
   background: #c1c7d0;
   border: 2px solid blue;
   
@@ -913,7 +911,7 @@ textarea::placeholder {
   height: 56px;
 }
 
-.popup_container {
+#popup_container {
   padding: 16px;
   margin-bottom: 50px;
   gap: 12px;
@@ -1254,8 +1252,6 @@ textarea::placeholder {
   .pop_rightblock{
     width: 40%;
     height: 157px; 
-
-
   }
 
   input[type="text"],

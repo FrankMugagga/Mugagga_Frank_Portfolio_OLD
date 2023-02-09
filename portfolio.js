@@ -97,7 +97,7 @@ const data = [
 ];
 
 worksport.innerHTML +=`
-<div class="card_works_one">
+<div id=${data[0].id1} class="card_works_one">
   <div class="snap_cont">
     <img class="portfolio_snap_1" src=${data[0].image_one} alt="profile picture with success story:'from school dropout to product designer at facebook'">                    
   </div>   
@@ -140,7 +140,7 @@ worksport.innerHTML +=`
 </div> 
 
 
-<div class="card_two_four card_works_one">
+<div id=${data[1].id2}  class="card_two_four card_works_one">
   <div  class="snap_cont">
     <img class="portfolio_snap_1" src=${data[1].image_two}  alt="profile picture with availability information">                    
   </div>
@@ -186,7 +186,7 @@ worksport.innerHTML +=`
 </div>
 
 
-<div class="card_works_one">
+<div id=${data[2].id3}  class="card_works_one">
   <div  class="snap_cont">
     <img class="portfolio_snap_1" src=${data[2].image_three}  alt="gym fit yoga showing a lady with her legs on her head">                    
   </div>
@@ -238,7 +238,7 @@ worksport.innerHTML +=`
 
 <div class="card_two_four card_works_one">
 
-  <div  class="snap_cont">
+  <div  id=${data[3].id4}  class="snap_cont">
     <img class="portfolio_snap_1" src=${data[3].image_four}  alt="professional art printing showing pictures">                    
   </div>               
 
@@ -296,18 +296,18 @@ const pop_data = [
   {
   id : 'card_one',
   image : 'images/project/card_works_one.png',
-  name : 'Tonicity',
+  name : 'Tonic',
   stack : ['CANOPY', 'Back End Dev', 2015],  
   portfolio_descrip : ' A daily selection of privately personalized reads; no accounts or sign-ups required.',  
   technologies: [
       'html',
-      'css',
-      'javascript'
+      'jvascript',
+      'css'
   ],
-  technologies2: ['github', 'ruby', 'Bootstraps'],
+  technologies2: ['github', 'Bootstraps', 'ruby'],
   btn1 : 'See Live',
   btn2 : 'See source',
-  linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+  linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
   linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
 }, 
 
@@ -323,10 +323,10 @@ const pop_data = [
       'css',
       'javascript'
   ],
-  technologies2: ['github', 'ruby', 'Bootstraps'],
+  technologies2: ['github', 'Bootsrtap', 'ruby'],
   btn1 : 'See Live',
   btn2 : 'See source',
-  linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+  linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
   linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
 },
 
@@ -342,10 +342,10 @@ const pop_data = [
       'css',
       'javascript'
   ],
-  technologies2: ['github', 'ruby', 'Bootstraps'],
+  technologies2: ['github', 'Bootsrtap', 'ruby'],
   btn1 : 'See Live',
   btn2 : 'See source',
-  linkToLiveVersion3: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+  linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
   linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
 },
 
@@ -357,98 +357,113 @@ const pop_data = [
   portfolio_descrip : 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
   technologies: [
       'html',
-      'Ruby on rails',
-      'css',
-      'javascript'
+      'javascript',
+      'css',     
   ],
-  technologies2: ['github', 'ruby', 'Bootstraps'],
-  bbtn1 : 'See Live',
+  
+  btn1 : 'See Live',
   btn2 : 'See source',
-  linkToLiveVersion4 : 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+  linkToLiveVersion : 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
   linkToSource : 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
 }
 
 ];
 
-/*const pop_window = document.querySelector('#project_popup');*/
-/*(*/
-const pop_window = document.getElementById('project_popup');
-let btn = 'card_one';
+const pop_window = document.querySelector('#project_popup');
+const body = document.querySelectorAll('body');
+const btn = documnet.querySelectorAll('button');
+
+
+
+
+btn.addEventListener('click',openpop)
+
+
+
+//const pop_window = document.getElementById('project_popup');
+
+
+
+//let btn = 'card_three';
+
+function openpop() {
+  pop_window.style.display = 'block';
+  openMenu.classList.toggle('open');
+  btn.style.visibility = 'hidden';
+  //closeMenu.style.visibility = 'visible';
+
+    pop_window.innerHTML += `   `;
+   let pop_html = '';
 
 for (let i=0;i<pop_data.length;i++){
   if(pop_data[i].id === btn){
 
+    pop_html += `
 
-    pop_window.innerHTML += `
+    <div id="popup_container">
 
-     <div id="project_popup">
-        <div id=${pop_data[object].id} class="popup_container">
-
-          <div class="primary_text">
-            <div class="works_header">${pop_data[object].name} <img src="images/cross.png">
-          </div>
-
-          <ul class="header_details">
-            <li class="spec header_details_name">
-              ${object.stack[0]}
-            </li>
-            <li class="spec header_details_specification">
-              ${object.stack[1]}
-            </li>
-            <li class="spec header_details_year">
-              ${object.stack[2]}
-           </li>
-            </ul>
+      <div class="primary_text">
+        <div class="works_header">
+          ${pop_data[i].name} <img src="images/cross.png">
         </div>
+        <ul class="header_details">
+          <li class="spec header_details_name">
+            ${pop_data[i].stack[0]}
+          </li>
+          <li class="spec header_details_specification">
+            ${pop_data[i].stack[1]}
+          </li>
+          <li class="spec header_details_year">
+            ${pop_data[i].stack[2]}
+          </li>
+        </ul>
+      </div>
 
-        <div class="snap_cont">
-            <img class="portfolio_snap_1" src=${object.image }
-              alt="profile picture with success story:'from school dropout to product designer at facebook'">
-        </div>
-        <div class="popup_leftblock">
+      <div class="snap_cont">
+        <img class="portfolio_snap_1" src=${pop_data[i].image} alt="profile picture with success story:'from school dropout to product designer at facebook'">
+      </div>
 
+      <div class="popup_leftblock">
         <div class="poparag">
-          ${object.portfolio_descrip}
+          ${pop_data[i].portfolio_descrip}
         </div>
-
         <div class="pop_rightblock">
           <ul class="language_list">
             <li class="langs html_lang">
-             ${object.technologies[0]}
+             ${pop_data[i].technologies[0]}
             </li>
     
             <li class="langs ruby_lang">
-              ${object.technologies[1]}
+              ${pop_data[i].technologies[1]}
             </li> 
     
             <li class="langs css_lang">
-              ${object.technologies[2]}
+              ${pop_data[i].technologies[2]}
             </li>
-            <li class="langs javascript_lang">
-              ${object.technologies[3]}
-            </li>
+      
             </ul>
 
             <ul class="language_list">
               <li class="langs html_lang">
-                ${object.technologies2[0]}
+                ${pop_data[i].technologies2[0]}
               </li>    
               <li class="langs ruby_lang">
-                ${object.technologies2[1]}
+                ${pop_data[i].technologies2[1]}
               </li> 
     
               <li class="langs css_lang">
-                ${object.technologies2[2]}
+                ${pop_data[i].technologies2[2]}
               </li>
             </ul>                  
                     
 
             <div class="pop_btn">
-              <a href=${object.linkToLiveVersion4}>
-                button  class="get_in_touch "> &nbsp; ${bbtn1 }&nbsp;  <img src="images/Export.png" alt="see live"> </button>
+              <a href=${pop_data[i].linkToLiveVersion} alt="see live">
+   
+                <button class="get_in_touch "> ${pop_data[i].btn1} &nbsp;  <img src="images/Export.png" alt="see live"> </button>                   
               </a>
-              <a>
-                <button class="get_in_touch "> ${btn2} &nbsp; <img src="images/popgit.png" alt="see source">   </button>                      
+              <a href=${pop_data[i].linkToSource} alt="see source">
+                <button class="get_in_touch "> ${pop_data[i].btn2} &nbsp; <img src="images/popgit.png" alt="see source">   </button>                      
               </a>
             </div>         
 
@@ -464,16 +479,29 @@ for (let i=0;i<pop_data.length;i++){
 
       </footer>
 
-    </div>    
+
+
+
+
+    </div>
+       
     
     `;
 
-
-
-
   }
+}
 
 }
+
+
+
+
+
+
+
+  
+
+
 
 
 
