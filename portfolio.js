@@ -372,15 +372,16 @@ const pop_data = [
 
 /*const pop_window = document.querySelector('#project_popup');*/
 /*(*/
-const pop_window = document.getElementById('project_popup')
+const pop_window = document.getElementById('project_popup');
+let btn = 'card_one';
+
+for (let i=0;i<pop_data.length;i++){
+  if(pop_data[i].id === btn){
 
 
-pop_data.forEach((object) => {
-
-  /*if(buttonClass === object.id){*/
     pop_window.innerHTML += `
 
-   /* <div id="project_popup">*/
+     <div id="project_popup">
         <div id=${pop_data[object].id} class="popup_container">
 
           <div class="primary_text">
@@ -463,16 +464,17 @@ pop_data.forEach((object) => {
 
       </footer>
 
-    </div>
+    </div>    
     
-    
-    `
- })
-;
+    `;
 
-/*}
 
-);*/
+
+
+  }
+
+}
+
 
 
 
