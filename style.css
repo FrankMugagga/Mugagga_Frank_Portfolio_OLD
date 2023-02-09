@@ -319,6 +319,8 @@ h1 {
 }
 
 .works_header {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 70px;
   font-family: "Poppins", sans-serif;
@@ -395,7 +397,7 @@ h1 {
 
 .paragraph_details {
   width: 100%;
-  height: 76px;
+  height: /*76px*/100%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -404,7 +406,7 @@ h1 {
   color: #344563;
   flex: 1;
   order: 0;
-  flex-grow: 0;
+  flex-grow: 0; border: 2px solid blue;
   margin-bottom: 4px;
 }
 
@@ -829,7 +831,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px 16px;
+  padding: 12px 12px;
   width: 160px;
   height: 48px;
   left: 24px;
@@ -876,6 +878,52 @@ textarea::placeholder {
   background: #0d151e;
   border-radius: 10px;
   margin-top: 6px;
+}
+
+#project_popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 96%;
+  height: 100%;
+  /*padding: 60px 16px 0 16px;*/
+  background: #c1c7d0;
+  border: 2px solid blue;
+  
+}
+
+
+.poparag{
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563; 
+  flex-grow: 0;
+  margin-bottom: 4px;
+}
+
+.pop_btn{
+  display: flex;
+  max-width: 340px;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.popup_container {
+  padding: 16px;
+  margin-bottom: 50px;
+  gap: 12px;
+  width: 90%;
+  height: 100%;
+  left: calc(50% - 343px/2);
+  top: 60px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
 }
 
 @media screen and (min-width: 786px) {
@@ -1189,6 +1237,25 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .popup_leftblock{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .poparag {
+    height: 382px;
+    width: 60%;
+    margin-right: 24px;
+   border: 2px solid green;
+  }
+
+  .pop_rightblock{
+    width: 40%;
+    height: 157px; 
+
+
   }
 
   input[type="text"],
