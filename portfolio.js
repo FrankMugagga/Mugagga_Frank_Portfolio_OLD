@@ -232,9 +232,9 @@ worksport.innerHTML +=`
       ${data[2].btn3}                       
     </button>
 
-
   </div>    
 </div>
+
 
 <div class="card_two_four card_works_one">
 
@@ -281,14 +281,12 @@ worksport.innerHTML +=`
         ${data[3].technologies4[3]}
       </li>
     </ul>
-
-
     <button class="see_project" alt="see project">
       ${data[3].btn4} 
     </button>
 
 
-  </div>;
+  </div>
 </div>                    
 
 `;
