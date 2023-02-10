@@ -1270,7 +1270,6 @@ textarea::placeholder {
     height: 382px;
     width: 60%;
     margin-right: 24px;
-    border: 2px solid green;
   }
 
   .pop_rightblock {

@@ -20,7 +20,6 @@ menuselect.addEventListener('click', open);
 closeMenu.addEventListener('click', close);
 openMenu.addEventListener('click', close);
 
-
 const worksport = document.getElementById('works_portfolio');
 const data = [
   {
@@ -33,12 +32,12 @@ const data = [
     technologies: [
       'html',
       'css',
-      'javascript'
+      'javascript',
     ],
     btn: 'See Project',
     btn_id: 'btn_one',
     linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
+    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
   },
 
   {
@@ -51,12 +50,12 @@ const data = [
     technologies: [
       'html',
       'css',
-      'javascript'
+      'javascript',
     ],
     btn: 'See Project',
     btn_id: 'btn_two',
     linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
+    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
   },
 
   {
@@ -69,12 +68,12 @@ const data = [
     technologies: [
       'html',
       'css',
-      'javascript'
+      'javascript',
     ],
     btn: 'See Project',
     btn_id: 'btn_three',
     linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
+    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
   },
 
   {
@@ -87,18 +86,18 @@ const data = [
     technologies: [
       'html',
       'css',
-      'javascript'
+      'javascript',
     ],
     btn: 'See Project',
     btn_id: 'btn_four',
     linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
-  }
+    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+  },
 
 ];
 
-data.forEach((dataItem, index) => {
-  let cardWorks = document.createElement('div');
+data.forEach((dataItem) => {
+  const cardWorks = document.createElement('div');
   cardWorks.id = dataItem.id;
   cardWorks.className = 'card_works_one';
   cardWorks.innerHTML = `
@@ -140,15 +139,14 @@ data.forEach((dataItem, index) => {
       ${dataItem.btn}
     </button>
 
-  </div>`
+  </div>`;
   worksport.appendChild(cardWorks);
 });
 
-const pop_window = document.getElementById('project_popup');
-
+const popWindow = document.getElementById('project_popup');
 
 data.forEach((popItem, index) => {
-  let popWrapper = document.createElement('div');
+  const popWrapper = document.createElement('div');
   popWrapper.className = 'pop-hide';
   popWrapper.id = `popup_container-${index + 1}`;
   popWrapper.innerHTML = `<div class="primary_text">
@@ -201,87 +199,81 @@ data.forEach((popItem, index) => {
              </div>         
            </div>                 
          </div>
-       </div>`
-  pop_window.appendChild(popWrapper);
+       </div>`;
+  popWindow.appendChild(popWrapper);
 });
-
 
 const btnOne = document.getElementById('btn_one');
 const closeOne = document.getElementById('close-1');
 
-const btn_two = document.getElementById('btn_two');
+const btnTwo = document.getElementById('btn_two');
 const closeTwo = document.getElementById('close-2');
 
-const btn_three = document.getElementById('btn_three');
+const btnThree = document.getElementById('btn_three');
 const closeThree = document.getElementById('close-3');
 
-const btn_four = document.getElementById('btn_four');
+const btnFour = document.getElementById('btn_four');
 const closeFour = document.getElementById('close-4');
-// const close1 = document.getElementById('close-1');
 
 btnOne.addEventListener('click', () => {
-  pop_window.classList.toggle('pop-hide');
-  pop_window.classList.toggle('pop-show');
+  popWindow.classList.toggle('pop-hide');
+  popWindow.classList.toggle('pop-show');
   const innerPopup = document.getElementById('popup_container-1');
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
 });
-
 
 closeOne.addEventListener('click', () => {
-  pop_window.classList.toggle('pop-hide');
-  pop_window.classList.toggle('pop-show');
+  popWindow.classList.toggle('pop-hide');
+  popWindow.classList.toggle('pop-show');
   const innerPopup = document.getElementById('popup_container-1');
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
 });
 
-btn_two.addEventListener('click', () => {
-  pop_window.classList.toggle('pop-hide');
-  pop_window.classList.toggle('pop-show');
+btnTwo.addEventListener('click', () => {
+  popWindow.classList.toggle('pop-hide');
+  popWindow.classList.toggle('pop-show');
   const innerPopup = document.getElementById('popup_container-2');
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
 });
-
 
 closeTwo.addEventListener('click', () => {
-  pop_window.classList.toggle('pop-hide');
-  pop_window.classList.toggle('pop-show');
+  popWindow.classList.toggle('pop-hide');
+  popWindow.classList.toggle('pop-show');
   const innerPopup = document.getElementById('popup_container-2');
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
 });
 
-btn_three.addEventListener('click', () => {
-  pop_window.classList.toggle('pop-hide');
-  pop_window.classList.toggle('pop-show');
+btnThree.addEventListener('click', () => {
+  popWindow.classList.toggle('pop-hide');
+  popWindow.classList.toggle('pop-show');
   const innerPopup = document.getElementById('popup_container-3');
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
 });
-
 
 closeThree.addEventListener('click', () => {
-  pop_window.classList.toggle('pop-hide');
-  pop_window.classList.toggle('pop-show');
+  popWindow.classList.toggle('pop-hide');
+  popWindow.classList.toggle('pop-show');
   const innerPopup = document.getElementById('popup_container-3');
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
 });
 
-btn_four.addEventListener('click', () => {
-  pop_window.classList.toggle('pop-hide');
-  pop_window.classList.toggle('pop-show');
+btnFour.addEventListener('click', () => {
+  popWindow.classList.toggle('pop-hide');
+  popWindow.classList.toggle('pop-show');
   const innerPopup = document.getElementById('popup_container-4');
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
 });
 
-
 closeFour.addEventListener('click', () => {
-  pop_window.classList.toggle('pop-hide');
-  pop_window.classList.toggle('pop-show');
+  popWindow.classList.toggle('pop-hide');
+  popWindow.classList.toggle('pop-show');
   const innerPopup = document.getElementById('popup_container-4');
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
