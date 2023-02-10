@@ -28,8 +28,8 @@ const data = [
     image: 'images/project/card_works_one.png',
     name: 'Tonic',
     stack: ['CANOPY', 'Back End Dev', 2015],
-    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    portfolio_descrip: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    portfolio_descrip: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type ",
     technologies: [
       'html',
       'css',
@@ -150,7 +150,7 @@ const pop_window = document.getElementById('project_popup');
 data.forEach((popItem, index) => {
   let popWrapper = document.createElement('div');
   popWrapper.className = 'pop-hide';
-  popWrapper.id = `popup_container-${index+1}`;
+  popWrapper.id = `popup_container-${index + 1}`;
   popWrapper.innerHTML = `<div class="primary_text">
          <div class="works_header">
            ${popItem.name} <button id="close-${index + 1}"><img src="images/cross.png"></button>
@@ -182,11 +182,11 @@ data.forEach((popItem, index) => {
               ${popItem.technologies[0]}
              </li>
       
-             <li class="langs ruby_lang">
+             <li class="langs css_lang">
                ${popItem.technologies[1]}
              </li> 
       
-             <li class="langs css_lang">
+             <li class="langs javascript_lang">
                ${popItem.technologies[2]}
              </li>
             </ul>
@@ -202,7 +202,7 @@ data.forEach((popItem, index) => {
            </div>                 
          </div>
        </div>`
-       pop_window.appendChild(popWrapper);
+  pop_window.appendChild(popWrapper);
 });
 
 
