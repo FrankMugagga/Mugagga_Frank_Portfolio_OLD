@@ -24,614 +24,366 @@ openMenu.addEventListener('click', close);
 const worksport = document.getElementById('works_portfolio');
 const data = [
   {
-  id1 : 'card_one',
-  image_one : 'images/project/card_works_one.png',
-  name : 'Tonic',
-  stack : ['CANOPY', 'Back End Dev', 2015],
-  menu_descrip : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  portfolio_descrip : ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  technologies: [
+    id: 'card_one',
+    image: 'images/project/card_works_one.png',
+    name: 'Tonic',
+    stack: ['CANOPY', 'Back End Dev', 2015],
+    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    portfolio_descrip: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: [
       'html',
       'css',
       'javascript'
-  ],
-  btn1 : 'See Project',
-  btn_id1 : 'btn_one',
-  linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
-  inkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
-}, 
+    ],
+    btn: 'See Project',
+    btn_id: 'btn_one',
+    linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
+  },
 
-{
-  id2 : 'card_two',
-  image_two : 'images/project/card_works_two.png',
-  name2 : 'Multi-Post Stories',
-  stack2 : ['FACE BOOK', 'Full Stack Dev', 2015],
-  menu_descrip2 : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  portfolio_descrip2 : ' Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-  technologies2: [
+  {
+    id: 'card_two',
+    image: 'images/project/card_works_two.png',
+    name: 'Multi-Post Stories',
+    stack: ['FACE BOOK', 'Full Stack Dev', 2015],
+    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    portfolio_descrip: ' Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    technologies: [
       'html',
       'Ruby on rails',
       'css',
       'javascript'
-  ],
-  btn2 : 'See Project',
-  btn_id2 : 'btn_two',
-  linkToLiveVersion2: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
-  inkToSource2: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
-},
+    ],
+    btn: 'See Project',
+    btn_id: 'btn_two',
+    linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
+  },
 
-{
-  id3 : 'card_three',
-  image_three : 'images/project/card_works_three.png',
-  name3 : 'Facebook 360',
-  stack3 : ['FACE BOOK', 'Full Stack Dev', 2015],
-  menu_descrip3 : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  portfolio_descrip3 : "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-  technologies3: [
+  {
+    id: 'card_three',
+    image: 'images/project/card_works_three.png',
+    name: 'Facebook 360',
+    stack: ['FACE BOOK', 'Full Stack Dev', 2015],
+    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    portfolio_descrip: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    technologies: [
       'html',
       'Ruby on rails',
       'css',
       'javascript'
-  ],
-  btn3 : 'See Project',
-  btn_id3 : 'btn_three',
-  linkToLiveVersion3: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
-  inkToSource3: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
-},
+    ],
+    btn: 'See Project',
+    btn_id: 'btn_three',
+    linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
+  },
 
-{
-  id4 : 'card_four',
-  image_four : 'images/project/card_works_four.png',
-  name4 : 'Uber Navigation',
-  stack4 : ['Uber', 'Lead Developer', 2018],
-  menu_descrip4 : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  portfolio_descrip4 : 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  technologies4: [
+  {
+    id: 'card_four',
+    image: 'images/project/card_works_four.png',
+    name: 'Uber Navigation',
+    stack: ['Uber', 'Lead Developer', 2018],
+    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    portfolio_descrip: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    technologies: [
       'html',
       'Ruby on rails',
       'css',
       'javascript'
-  ],
-  btn4 : 'See Project',
-  btn_id4 : 'btn_four',
-  linkToLiveVersion4: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
-  inkToSource4: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
-}
+    ],
+    btn: 'See Project',
+    btn_id: 'btn_four',
+    linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
+  }
 
 ];
 
-worksport.innerHTML +=`
-<div id=${data[0].id1} class="card_works_one">
+data.forEach((dataItem, index) => {
+  let cardWorks = document.createElement('div');
+  cardWorks.id = dataItem.id;
+  cardWorks.className = 'card_works_one';
+  cardWorks.innerHTML = `
   <div class="snap_cont">
-    <img class="portfolio_snap_1" src=${data[0].image_one} alt="profile picture with success story:'from school dropout to product designer at facebook'">                    
+    <img class="portfolio_snap_1" src=${dataItem.image} alt="profile picture with success story:'from school dropout to product designer at facebook'">                    
   </div>   
   <div class="left_block">
     <div class="primary_text">
       <div class="works_header">
-        ${+"right"+data[0].name}
+        ${dataItem.name}
       </div>
       <ul class="header_details">
         <li class="spec header_details_name">
-          ${data[0].stack[0]}
+          ${dataItem.stack[0]}
         </li>
         <li class="spec header_details_specification">
-          ${data[0].stack[1]}
+          ${dataItem.stack[1]}
         </li>
         <li class="spec header_details_year">
-          ${data[0].stack[2]}
+          ${dataItem.stack[2]}
         </li>
       </ul>
     </div>
     <div class="paragraph_details">
-       ${data[0].portfolio_descrip}      
+       ${dataItem.portfolio_descrip}      
     </div>
     <ul class="language_list">
       <li class="langs html_lang">
-        ${data[0].technologies[0]}
+        ${dataItem.technologies[0]}
       </li>
       <li class="langs css_lang">
-        ${data[0].technologies[1]}
+        ${dataItem.technologies[1]}
       </li>
       <li class="langs javascript_lang">
-        ${data[0].technologies[2]}
+        ${dataItem.technologies[2]}
       </li>
     </ul>
-    <button id=${data[0].btn_id1} class="see_project"  alt="see project">
-      ${data[0].btn1}
+    <button id=${dataItem.btn_id} class="see_project"  alt="see project">
+      ${dataItem.btn}
     </button>
 
-  </div>
-</div> 
+  </div>`
+  worksport.appendChild(cardWorks);
+});
 
-
-<div id=${data[1].id2}  class="card_two_four card_works_one">
-  <div  class="snap_cont">
-    <img class="portfolio_snap_1" src=${data[1].image_two}  alt="profile picture with availability information">                    
-  </div>
-  <div class="left_block block-2_4 ">
-    <div class="primary_text">
-      <div class="works_header">
-        ${data[1].name2 }
-      </div>
-      <ul class="header_details">
-        <li class="spec header_details_name">
-          ${data[1].stack2[0]}
-        </li>
-        <li class="spec header_details_specification">
-          ${data[1].stack2[1]}
-        </li>
-        <li class="spec header_details_year">
-          ${data[1].stack2[2]}
-        </li>
-       </ul>
-    </div>
-    <div class="paragraph_details">
-      ${data[1].portfolio_descrip2}  
-    </div>
-    <ul class="language_list">
-      <li class="langs html_lang">
-        ${data[1].technologies2[0]}
-      </li>
-      <li class="langs ruby_lang">
-        ${data[1].technologies2[1]}
-      </li> 
-      <li class="langs css_lang">
-        ${data[1].technologies2[2]}
-      </li>
-      <li class="langs javascript_lang">
-        ${data[1].technologies2[3]}
-      </li>
-    </ul>
-     <button id=${data[1].btn_id2} class="see_project" alt="see project">
-       ${data[1].btn2 }
-    </button>
-
-  </div>
-</div>
-
-
-<div id=${data[2].id3}  class="card_works_one">
-  <div  class="snap_cont">
-    <img class="portfolio_snap_1" src=${data[2].image_three}  alt="gym fit yoga showing a lady with her legs on her head">                    
-  </div>
-
-  <div class="left_block">
-
-    <div class="primary_text">
-      <div class="works_header">
-        ${data[2].name3}
-      </div>
-      <ul class="header_details">
-        <li class="spec header_details_name">
-          ${data[2].stack3[0]}
-        </li>
-        <li class="spec header_details_specification">
-          ${data[2].stack3[1]}
-        </li>
-        <li class="spec header_details_year">
-          ${data[2].stack3[2]}
-        </li>
-      </ul>
-    </div>
-    <div class="paragraph_details">
-      ${data[2].portfolio_descrip3} 
-    </div>
-    <ul class="language_list">
-      <li class="langs html_lang">
-        ${data[2].technologies3[0]}
-      </li>
-
-      <li class="langs ruby_lang">
-        ${data[2].technologies3[1]}
-      </li> 
-
-      <li class="langs css_lang">
-        ${data[2].technologies3[2]}
-      </li>
-      <li class="langs javascript_lang">
-        ${data[2].technologies3[3]}
-      </li>
-    </ul>
-    <button id=${data[2].btn_id3} class="see_project" alt="see project">
-      ${data[2].btn3}                       
-    </button>
-
-  </div>    
-</div>
-
-
-<div class="card_two_four card_works_one">
-
-  <div  id=${data[3].id4}  class="snap_cont">
-    <img class="portfolio_snap_1" src=${data[3].image_four}  alt="professional art printing showing pictures">                    
-  </div>               
-
-  <div class="left_block">
-
-    <div class="primary_text">
-      <div class="works_header">
-        ${data[3].name4}                          
-      </div>
-
-      <ul class="header_details">
-        <li class="spec header_details_name">
-          ${data[3].stack4[0]}
-        </li>
-        <li class="spec header_details_specification">
-          ${data[3].stack4[1]}
-        </li>
-        <li class="spec header_details_year">
-          ${data[3].stack4[2]}
-        </li>
-      </ul>
-    </div>
-    <div class="paragraph_details">
-      ${data[3].portfolio_descrip4} 
-    </div>
-
-    <ul class="language_list">
-      <li class="langs html_lang">
-        ${data[3].technologies4[0]}
-      </li>
-
-      <li class="langs ruby_lang">
-        ${data[3].technologies4[1]}
-      </li> 
-
-      <li class="langs css_lang">
-        ${data[3].technologies4[2]}
-      </li>
-      <li class="langs javascript_lang">
-        ${data[3].technologies4[3]}
-      </li>
-    </ul>
-    <button id=${data[3].btn_id4 } class="see_project" alt="see project">
-      ${data[3].btn4} 
-    </button>
-
-
-  </div>
-</div>                    
-
-`;
-
-//popups
-const pop_data = [
-  {
-  id : 'card_one',
-  image : 'images/project/card_works_one.png',
-  name : 'Tonic',
-  stack : ['CANOPY', 'Back End Dev', 2015],  
-  portfolio_descrip : ' A daily selection of privately personalized reads; no accounts or sign-ups required.',  
-  technologies: [
-      'html',
-      'jvascript',
-      'css'
-  ],
-  technologies2: ['github', 'Bootstraps', 'ruby'],
-  btn1 : 'See Live',
-  btn2 : 'See source',
-  linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-  linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
-}, 
-
-{
-  id : 'card_two',
-  image : 'images/project/card_works_two.png',
-  name : 'Multi-Post Stories',
-  stack : ['FACE BOOK', 'Full Stack Dev', 2015],  
-  portfolio_descrip : ' Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-  technologies: [
-      'html',
-      'Ruby on rails',
-      'css',
-      'javascript'
-  ],
-  technologies2: ['github', 'Bootsrtap', 'ruby'],
-  btn1 : 'See Live',
-  btn2 : 'See source',
-  linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-  linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
-},
-
-{
-  id : 'card_three',
-  image : 'images/project/card_works_three.png',
-  name : 'Facebook 360',
-  stack : ['FACE BOOK', 'Full Stack Dev', 2015],  
-  portfolio_descrip: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-  technologies: [
-      'html',
-      'Ruby on rails',
-      'css',
-      'javascript'
-  ],
-  technologies2: ['github', 'Bootsrtap', 'ruby'],
-  btn1 : 'See Live',
-  btn2 : 'See source',
-  linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-  linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
-},
-
-{
-  id : 'card_four',
-  image : 'images/project/card_works_four.png',
-  name : 'Uber Navigation',
-  stack : ['Uber', 'Lead Developer', 2018],  
-  portfolio_descrip : 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  technologies: [
-      'html',
-      'javascript',
-      'css',     
-  ],
-  
-  btn1 : 'See Live',
-  btn2 : 'See source',
-  linkToLiveVersion : 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-  linkToSource : 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
-}
-
-];
-//const pop_window = document.querySelectorAll('project_popup');
-//const pop_window = document.querySelector('#project_popup');
 const pop_window = document.getElementById('project_popup');
-/*const btn_open = document.querySelectorAll('[data-modal-target]');
-const close_btn = document.querySelectorAll('[data-close-button]');
-
-btn_open.forEach(button => {
-  button.addEventListener('click', () =>{
-    const btn_id = button.querySelector(button.dataset.modalTarget);
-    btn_select(btn_id);
-  })
-
-})
 
 
-function btn_select(btn_id){
-  if(btn_id==null) return;
-  if(btn_id===true){
-  btn_id.classList.add('active');
-}
-
-}
-
-close_btn.forEach(button => {
-  button.addEventListener('click', () =>{
-    const btn_id = button.closest('.works_header');
-    btn_close(btn_id);
-  })
-
-})
-
-function btn_close(btn_id){
-  if(btn_id==null) return;
-  btn_id.classList.remove('active');
-}
-
-
-function btn_select(btn_id){
-  if(btn_id==null) return;
-  if(btn_id===true){
-
-
-   // let btn_id = 'card_three';
-    pop_window.innerHTML += `   `;
-   let pop_html = '';
-
-for (let i=0;i<pop_data.length;i++){
-  if(pop_data[i].id === btn_id){
-
-    pop_html += `
-
-    <div id="popup_container">
-
-      <div class="primary_text">
-        <div class="works_header">
-          ${pop_data[i].name} <button data-close-button><img src="images/cross.png"></button>
-        </div>
-        <ul class="header_details">
-          <li class="spec header_details_name">
-            ${pop_data[i].stack[0]}
-          </li>
-          <li class="spec header_details_specification">
-            ${pop_data[i].stack[1]}
-          </li>
-          <li class="spec header_details_year">
-            ${pop_data[i].stack[2]}
-          </li>
-        </ul>
-      </div>
-
-      <div class="snap_cont">
-        <img class="portfolio_snap_1" src=${pop_data[i].image} alt="profile picture with success story:'from school dropout to product designer at facebook'">
-      </div>
-
-      <div class="popup_leftblock">
-        <div class="poparag">
-          ${pop_data[i].portfolio_descrip}
-        </div>
-        <div class="pop_rightblock">
-          <ul class="language_list">
-            <li class="langs html_lang">
-             ${pop_data[i].technologies[0]}
-            </li>
-    
-            <li class="langs ruby_lang">
-              ${pop_data[i].technologies[1]}
-            </li> 
-    
-            <li class="langs css_lang">
-              ${pop_data[i].technologies[2]}
-            </li>
+data.forEach((popItem, index) => {
+  let popWrapper = document.createElement('div');
+  popWrapper.className = 'pop-hide';
+  popWrapper.id = `popup_container-${index+1}`;
+  popWrapper.innerHTML = `<div class="primary_text">
+         <div class="works_header">
+           ${popItem.name} <button id="close-${index + 1}"><img src="images/cross.png"></button>
+         </div>
+         <ul class="header_details">
+           <li class="spec header_details_name">
+             ${popItem.stack[0]}
+           </li>
+           <li class="spec header_details_specification">
+             ${popItem.stack[1]}
+           </li>
+           <li class="spec header_details_year">
+             ${popItem.stack[2]}
+           </li>
+         </ul>
+       </div>
+  
+       <div class="snap_cont">
+         <img class="portfolio_snap_1" src=${popItem.image} alt="profile picture with success story:'from school dropout to product designer at facebook'">
+       </div>
+  
+       <div class="popup_leftblock">
+         <div class="poparag">
+           ${popItem.portfolio_descrip}
+         </div>
+         <div class="pop_rightblock">
+           <ul class="language_list">
+             <li class="langs html_lang">
+              ${popItem.technologies[0]}
+             </li>
       
-            </ul>
-
-            <ul class="language_list">
-              <li class="langs html_lang">
-                ${pop_data[i].technologies2[0]}
-              </li>    
-              <li class="langs ruby_lang">
-                ${pop_data[i].technologies2[1]}
-              </li> 
-    
-              <li class="langs css_lang">
-                ${pop_data[i].technologies2[2]}
-              </li>
-            </ul>                  
-                    
-
-            <div class="pop_btn">
-              <a href=${pop_data[i].linkToLiveVersion} alt="see live">
-   
-                <button class="get_in_touch "> ${pop_data[i].btn1} &nbsp;  <img src="images/Export.png" alt="see live"> </button>                   
-              </a>
-              <a href=${pop_data[i].linkToSource} alt="see source">
-                <button class="get_in_touch "> ${pop_data[i].btn2} &nbsp; <img src="images/popgit.png" alt="see source">   </button>                      
-              </a>
-            </div>         
-
-
-          </div>        
-           
-
-        </div>
-
-      </div>
-        
-      <footer class="home_indicator">
-
-      </footer>
-    </div>
-       
-    
-    `;
-
-  }
-}
-pop_window.innerHTML = pop_html;
-
-    
-  btn_id.classList.add('active');
-}
-
-}*/
-
-
-
-
-let btn_id = 'card_three';
-    pop_window.innerHTML += `   `;
-   let pop_html = '';
-
-for (let i=0;i<pop_data.length;i++){
-  if(pop_data[i].id === btn_id){
-
-    pop_html += `
-
-    <div class="pop" id="popup_container">
-
-      <div class="primary_text">
-        <div class="works_header">
-          ${pop_data[i].name} <button id="close"><img src="images/cross.png"></button>
-        </div>
-        <ul class="header_details">
-          <li class="spec header_details_name">
-            ${pop_data[i].stack[0]}
-          </li>
-          <li class="spec header_details_specification">
-            ${pop_data[i].stack[1]}
-          </li>
-          <li class="spec header_details_year">
-            ${pop_data[i].stack[2]}
-          </li>
-        </ul>
-      </div>
-
-      <div class="snap_cont">
-        <img class="portfolio_snap_1" src=${pop_data[i].image} alt="profile picture with success story:'from school dropout to product designer at facebook'">
-      </div>
-
-      <div class="popup_leftblock">
-        <div class="poparag">
-          ${pop_data[i].portfolio_descrip}
-        </div>
-        <div class="pop_rightblock">
-          <ul class="language_list">
-            <li class="langs html_lang">
-             ${pop_data[i].technologies[0]}
-            </li>
-    
-            <li class="langs ruby_lang">
-              ${pop_data[i].technologies[1]}
-            </li> 
-    
-            <li class="langs css_lang">
-              ${pop_data[i].technologies[2]}
-            </li>
+             <li class="langs ruby_lang">
+               ${popItem.technologies[1]}
+             </li> 
       
+             <li class="langs css_lang">
+               ${popItem.technologies[2]}
+             </li>
             </ul>
-
-            <ul class="language_list">
-              <li class="langs html_lang">
-                ${pop_data[i].technologies2[0]}
-              </li>    
-              <li class="langs ruby_lang">
-                ${pop_data[i].technologies2[1]}
-              </li> 
-    
-              <li class="langs css_lang">
-                ${pop_data[i].technologies2[2]}
-              </li>
-            </ul>                  
-                    
-
-            <div class="pop_btn">
-              <a href=${pop_data[i].linkToLiveVersion} alt="see live">
-   
-                <button class="get_in_touch "> ${pop_data[i].btn1} &nbsp;  <img src="images/Export.png" alt="see live"> </button>                   
-              </a>
-              <a href=${pop_data[i].linkToSource} alt="see source">
-                <button class="get_in_touch "> ${pop_data[i].btn2} &nbsp; <img src="images/popgit.png" alt="see source">   </button>                      
-              </a>
-            </div>         
+             <div class="pop_btn">
+               <a href=${popItem.linkToLiveVersion} alt="see live">
+     
+                 <button class="get_in_touch ">see live &nbsp;  <img src="images/Export.png" alt="see live"> </button>                   
+               </a>
+               <a href=${popItem.linkToSource} alt="see source">
+                 <button class="get_in_touch "> see source &nbsp; <img src="images/popgit.png" alt="see source">   </button>                      
+               </a>
+             </div>         
+           </div>                 
+         </div>
+       </div>`
+       pop_window.appendChild(popWrapper);
+});
 
 
-          </div>        
-           
+const btnOne = document.getElementById('btn_one');
+const closeOne = document.getElementById('close-1');
 
-        </div>
+const btn_two = document.getElementById('btn_two');
+const closeTwo = document.getElementById('close-2');
 
-      </div>
-        
-      <footer class="home_indicator">
+const btn_three = document.getElementById('btn_three');
+const closeThree = document.getElementById('close-3');
 
-      </footer>
+const btn_four = document.getElementById('btn_four');
+const closeFour = document.getElementById('close-4');
+// const close1 = document.getElementById('close-1');
 
-
-
-
-
-    </div>
-       
-    
-    `;
-
-  }
-}
-pop_window.innerHTML = pop_html;
+btnOne.addEventListener('click', () => {
+  pop_window.classList.toggle('pop-hide');
+  pop_window.classList.toggle('pop-show');
+  const innerPopup = document.getElementById('popup_container-1');
+  innerPopup.classList.toggle('pop-inner-show');
+  innerPopup.classList.toggle('pop-hide');
+});
 
 
-const openCard1 = document.getElementById('btn_one');
-const close1 = document.getElementById('close');
-const selected_card = document.getElementById('card_one');
+closeOne.addEventListener('click', () => {
+  pop_window.classList.toggle('pop-hide');
+  pop_window.classList.toggle('pop-show');
+  const innerPopup = document.getElementById('popup_container-1');
+  innerPopup.classList.toggle('pop-inner-show');
+  innerPopup.classList.toggle('pop-hide');
+});
 
-openCard1.addEventListener('click', () => {
-  selected_card.classList.toggle('pop');
-  //selected_card.classList.toggle('display-none');
+btn_two.addEventListener('click', () => {
+  pop_window.classList.toggle('pop-hide');
+  pop_window.classList.toggle('pop-show');
+  const innerPopup = document.getElementById('popup_container-2');
+  innerPopup.classList.toggle('pop-inner-show');
+  innerPopup.classList.toggle('pop-hide');
+});
+
+
+closeTwo.addEventListener('click', () => {
+  pop_window.classList.toggle('pop-hide');
+  pop_window.classList.toggle('pop-show');
+  const innerPopup = document.getElementById('popup_container-2');
+  innerPopup.classList.toggle('pop-inner-show');
+  innerPopup.classList.toggle('pop-hide');
+});
+
+btn_three.addEventListener('click', () => {
+  pop_window.classList.toggle('pop-hide');
+  pop_window.classList.toggle('pop-show');
+  const innerPopup = document.getElementById('popup_container-3');
+  innerPopup.classList.toggle('pop-inner-show');
+  innerPopup.classList.toggle('pop-hide');
+});
+
+
+closeThree.addEventListener('click', () => {
+  pop_window.classList.toggle('pop-hide');
+  pop_window.classList.toggle('pop-show');
+  const innerPopup = document.getElementById('popup_container-3');
+  innerPopup.classList.toggle('pop-inner-show');
+  innerPopup.classList.toggle('pop-hide');
+});
+
+btn_four.addEventListener('click', () => {
+  pop_window.classList.toggle('pop-hide');
+  pop_window.classList.toggle('pop-show');
+  const innerPopup = document.getElementById('popup_container-4');
+  innerPopup.classList.toggle('pop-inner-show');
+  innerPopup.classList.toggle('pop-hide');
+});
+
+
+closeFour.addEventListener('click', () => {
+  pop_window.classList.toggle('pop-hide');
+  pop_window.classList.toggle('pop-show');
+  const innerPopup = document.getElementById('popup_container-4');
+  innerPopup.classList.toggle('pop-inner-show');
+  innerPopup.classList.toggle('pop-hide');
 });
 
 
 
+// 
+
+// for (let i = 0; i < data.length; i++) {
+//   let btn_id = data[i].btn_id;
+//   if (data[i].id === btn_id) {
+    
+//     pop_html += `<div class="pop" id="popup_container">
+//       <div class="primary_text">
+//         <div class="works_header">
+//           ${data[i].name} <button id="close-${i + 1}"><img src="images/cross.png"></button>
+//         </div>
+//         <ul class="header_details">
+//           <li class="spec header_details_name">
+//             ${data[i].stack[0]}
+//           </li>
+//           <li class="spec header_details_specification">
+//             ${data[i].stack[1]}
+//           </li>
+//           <li class="spec header_details_year">
+//             ${data[i].stack[2]}
+//           </li>
+//         </ul>
+//       </div>
+
+//       <div class="snap_cont">
+//         <img class="portfolio_snap_1" src=${data[i].image} alt="profile picture with success story:'from school dropout to product designer at facebook'">
+//       </div>
+
+//       <div class="popup_leftblock">
+//         <div class="poparag">
+//           ${data[i].portfolio_descrip}
+//         </div>
+//         <div class="pop_rightblock">
+//           <ul class="language_list">
+//             <li class="langs html_lang">
+//              ${data[i].technologies[0]}
+//             </li>
+    
+//             <li class="langs ruby_lang">
+//               ${data[i].technologies[1]}
+//             </li> 
+    
+//             <li class="langs css_lang">
+//               ${data[i].technologies[2]}
+//             </li>
+      
+//             </ul>
+
+//             <ul class="language_list">
+//               <li class="langs html_lang">
+//                 ${data[i].technologies2[0]}
+//               </li>    
+//               <li class="langs ruby_lang">
+//                 ${data[i].technologies2[1]}
+//               </li> 
+    
+//               <li class="langs css_lang">
+//                 ${data[i].technologies2[2]}
+//               </li>
+//             </ul>                  
+                    
+
+//             <div class="pop_btn">
+//               <a href=${data[i].linkToLiveVersion} alt="see live">
+   
+//                 <button class="get_in_touch "> ${data[i].btn1} &nbsp;  <img src="images/Export.png" alt="see live"> </button>                   
+//               </a>
+//               <a href=${data[i].linkToSource} alt="see source">
+//                 <button class="get_in_touch "> ${data[i].btn2} &nbsp; <img src="images/popgit.png" alt="see source">   </button>                      
+//               </a>
+//             </div>         
+//           </div>                 
+//         </div>
+//       </div>    
+//       <footer class="home_indicator">
+//       </footer>
+//     </div>
+//     `;
+
+//   }
+// }
+// pop_window.innerHTML = pop_html;
+
+
+// const openCard1 = document.getElementById('btn_one');
+// const close1 = document.getElementById('close');
+// const selected_card = document.getElementById('card_one');
+
+// openCard1.addEventListener('click', () => {
+//   selected_card.classList.toggle('pop');
+//   //selected_card.classList.toggle('display-none');
+// });
 
 
 
@@ -640,7 +392,8 @@ openCard1.addEventListener('click', () => {
 
 
 
-  
+
+
 
 
 
