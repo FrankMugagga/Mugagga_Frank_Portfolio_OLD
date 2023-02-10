@@ -132,7 +132,7 @@ worksport.innerHTML +=`
         ${data[0].technologies[2]}
       </li>
     </ul>
-    <button id=${data[0].id1} class="see_project"  alt="see project">
+    <button data-modal-target=${data[0].id1} class="see_project"  alt="see project">
       ${data[0].btn1}
     </button>
 
@@ -178,7 +178,7 @@ worksport.innerHTML +=`
         ${data[1].technologies2[3]}
       </li>
     </ul>
-     <button id=${data[1].id2} class="see_project" alt="see project">
+     <button data-modal-target=${data[1].id2} class="see_project" alt="see project">
        ${data[1].btn2 }
     </button>
 
@@ -228,7 +228,7 @@ worksport.innerHTML +=`
         ${data[2].technologies3[3]}
       </li>
     </ul>
-    <button id=${data[2].id3} class="see_project" alt="see project">
+    <button data-modal-target=${data[2].id3} class="see_project" alt="see project">
       ${data[2].btn3}                       
     </button>
 
@@ -281,7 +281,7 @@ worksport.innerHTML +=`
         ${data[3].technologies4[3]}
       </li>
     </ul>
-    <button id=${data[3].id4} class="see_project" alt="see project">
+    <button data-modal-target=${data[3].id4} class="see_project" alt="see project">
       ${data[3].btn4} 
     </button>
 
@@ -370,33 +370,56 @@ const pop_data = [
 ];
 
 const pop_window = document.querySelector('#project_popup');
-const body = document.querySelectorAll('body');
-const btn = documnet.querySelectorAll('button');
-
-
-
-
-btn.addEventListener('click',openpop)
-
-
-
 //const pop_window = document.getElementById('project_popup');
+const btn_open = document.querySelectorAll('[data-modal-target]');
+const close_btn = document.querySelectorAll('[data-close-button]');
+
+btn_open.forEach(button => {
+  button.addEventListener('click', () =>{
+    const btn_id = button.querySelector(button.CDATA_SECTION_NODE.modalTarget);
+    btn_select(btn_id);
+  })
+
+})
+
+function btn_select(btn_id){
+  if(btn_id==null) return;
+   if(btn_id===true){
+
+     pop_window.innerHTML += `   `;
+   let pop_html = '';
+
+
+   }
 
 
 
-//let btn = 'card_three';
 
-function openpop() {
-  pop_window.style.display = 'block';
-  openMenu.classList.toggle('open');
-  btn.style.visibility = 'hidden';
-  //closeMenu.style.visibility = 'visible';
 
+
+  btn_id.classList.add('active');
+}
+
+close_btn.forEach(button => {
+  button.addEventListener('click', () =>{
+    const btn_id = button.closest('.works_header');
+    btn_close(btn_id);
+  })
+
+})
+
+function btn_close(btn_id){
+  if(btn_id==null) return;
+  btn_id.classList.remove('active');
+}
+
+
+let btn_id = 'card_three';
     pop_window.innerHTML += `   `;
    let pop_html = '';
 
 for (let i=0;i<pop_data.length;i++){
-  if(pop_data[i].id === btn){
+  if(pop_data[i].id === btn_id){
 
     pop_html += `
 
@@ -404,7 +427,7 @@ for (let i=0;i<pop_data.length;i++){
 
       <div class="primary_text">
         <div class="works_header">
-          ${pop_data[i].name} <img src="images/cross.png">
+          ${pop_data[i].name} <button data-close-button><img src="images/cross.png"></button>
         </div>
         <ul class="header_details">
           <li class="spec header_details_name">
@@ -491,7 +514,11 @@ for (let i=0;i<pop_data.length;i++){
   }
 }
 
-}
+//}
+
+pop_window.innerHTML = pop_html;
+
+
 
 
 
