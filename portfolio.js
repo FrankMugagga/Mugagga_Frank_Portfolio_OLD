@@ -37,7 +37,7 @@ const data = [
     ],
     btn: 'See Project',
     btn_id: 'btn_one',
-    linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
     linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
   },
 
@@ -50,13 +50,12 @@ const data = [
     portfolio_descrip: ' Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technologies: [
       'html',
-      'Ruby on rails',
       'css',
       'javascript'
     ],
     btn: 'See Project',
     btn_id: 'btn_two',
-    linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
     linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
   },
 
@@ -69,13 +68,12 @@ const data = [
     portfolio_descrip: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     technologies: [
       'html',
-      'Ruby on rails',
       'css',
       'javascript'
     ],
     btn: 'See Project',
     btn_id: 'btn_three',
-    linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
     linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
   },
 
@@ -88,13 +86,12 @@ const data = [
     portfolio_descrip: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technologies: [
       'html',
-      'Ruby on rails',
       'css',
       'javascript'
     ],
     btn: 'See Project',
     btn_id: 'btn_four',
-    linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
     linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
   }
 
@@ -289,115 +286,3 @@ closeFour.addEventListener('click', () => {
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
 });
-
-
-
-// 
-
-// for (let i = 0; i < data.length; i++) {
-//   let btn_id = data[i].btn_id;
-//   if (data[i].id === btn_id) {
-    
-//     pop_html += `<div class="pop" id="popup_container">
-//       <div class="primary_text">
-//         <div class="works_header">
-//           ${data[i].name} <button id="close-${i + 1}"><img src="images/cross.png"></button>
-//         </div>
-//         <ul class="header_details">
-//           <li class="spec header_details_name">
-//             ${data[i].stack[0]}
-//           </li>
-//           <li class="spec header_details_specification">
-//             ${data[i].stack[1]}
-//           </li>
-//           <li class="spec header_details_year">
-//             ${data[i].stack[2]}
-//           </li>
-//         </ul>
-//       </div>
-
-//       <div class="snap_cont">
-//         <img class="portfolio_snap_1" src=${data[i].image} alt="profile picture with success story:'from school dropout to product designer at facebook'">
-//       </div>
-
-//       <div class="popup_leftblock">
-//         <div class="poparag">
-//           ${data[i].portfolio_descrip}
-//         </div>
-//         <div class="pop_rightblock">
-//           <ul class="language_list">
-//             <li class="langs html_lang">
-//              ${data[i].technologies[0]}
-//             </li>
-    
-//             <li class="langs ruby_lang">
-//               ${data[i].technologies[1]}
-//             </li> 
-    
-//             <li class="langs css_lang">
-//               ${data[i].technologies[2]}
-//             </li>
-      
-//             </ul>
-
-//             <ul class="language_list">
-//               <li class="langs html_lang">
-//                 ${data[i].technologies2[0]}
-//               </li>    
-//               <li class="langs ruby_lang">
-//                 ${data[i].technologies2[1]}
-//               </li> 
-    
-//               <li class="langs css_lang">
-//                 ${data[i].technologies2[2]}
-//               </li>
-//             </ul>                  
-                    
-
-//             <div class="pop_btn">
-//               <a href=${data[i].linkToLiveVersion} alt="see live">
-   
-//                 <button class="get_in_touch "> ${data[i].btn1} &nbsp;  <img src="images/Export.png" alt="see live"> </button>                   
-//               </a>
-//               <a href=${data[i].linkToSource} alt="see source">
-//                 <button class="get_in_touch "> ${data[i].btn2} &nbsp; <img src="images/popgit.png" alt="see source">   </button>                      
-//               </a>
-//             </div>         
-//           </div>                 
-//         </div>
-//       </div>    
-//       <footer class="home_indicator">
-//       </footer>
-//     </div>
-//     `;
-
-//   }
-// }
-// pop_window.innerHTML = pop_html;
-
-
-// const openCard1 = document.getElementById('btn_one');
-// const close1 = document.getElementById('close');
-// const selected_card = document.getElementById('card_one');
-
-// openCard1.addEventListener('click', () => {
-//   selected_card.classList.toggle('pop');
-//   //selected_card.classList.toggle('display-none');
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
