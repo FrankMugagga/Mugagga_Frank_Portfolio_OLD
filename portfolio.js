@@ -20,8 +20,8 @@ menuselect.addEventListener('click', open);
 closeMenu.addEventListener('click', close);
 openMenu.addEventListener('click', close);
 
-const worksport = document.getElementById('works_portfolio');
 
+const worksport = document.getElementById('works_portfolio');
 const data = [
   {
   id1 : 'card_one',
@@ -36,6 +36,7 @@ const data = [
       'javascript'
   ],
   btn1 : 'See Project',
+  btn_id1 : 'btn_one',
   linkToLiveVersion: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
   inkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
 }, 
@@ -54,6 +55,7 @@ const data = [
       'javascript'
   ],
   btn2 : 'See Project',
+  btn_id2 : 'btn_two',
   linkToLiveVersion2: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
   inkToSource2: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
 },
@@ -72,6 +74,7 @@ const data = [
       'javascript'
   ],
   btn3 : 'See Project',
+  btn_id3 : 'btn_three',
   linkToLiveVersion3: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
   inkToSource3: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
 },
@@ -90,6 +93,7 @@ const data = [
       'javascript'
   ],
   btn4 : 'See Project',
+  btn_id4 : 'btn_four',
   linkToLiveVersion4: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
   inkToSource4: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio'
 }
@@ -132,7 +136,7 @@ worksport.innerHTML +=`
         ${data[0].technologies[2]}
       </li>
     </ul>
-    <button data-modal-target=${data[0].id1} class="see_project"  alt="see project">
+    <button id=${data[0].btn_id1} class="see_project"  alt="see project">
       ${data[0].btn1}
     </button>
 
@@ -178,7 +182,7 @@ worksport.innerHTML +=`
         ${data[1].technologies2[3]}
       </li>
     </ul>
-     <button data-modal-target=${data[1].id2} class="see_project" alt="see project">
+     <button id=${data[1].btn_id2} class="see_project" alt="see project">
        ${data[1].btn2 }
     </button>
 
@@ -228,7 +232,7 @@ worksport.innerHTML +=`
         ${data[2].technologies3[3]}
       </li>
     </ul>
-    <button data-modal-target=${data[2].id3} class="see_project" alt="see project">
+    <button id=${data[2].btn_id3} class="see_project" alt="see project">
       ${data[2].btn3}                       
     </button>
 
@@ -281,7 +285,7 @@ worksport.innerHTML +=`
         ${data[3].technologies4[3]}
       </li>
     </ul>
-    <button data-modal-target=${data[3].id4} class="see_project" alt="see project">
+    <button id=${data[3].btn_id4 } class="see_project" alt="see project">
       ${data[3].btn4} 
     </button>
 
@@ -291,7 +295,7 @@ worksport.innerHTML +=`
 
 `;
 
-
+//popups
 const pop_data = [
   {
   id : 'card_one',
@@ -368,36 +372,27 @@ const pop_data = [
 }
 
 ];
-
-const pop_window = document.querySelector('#project_popup');
-//const pop_window = document.getElementById('project_popup');
-const btn_open = document.querySelectorAll('[data-modal-target]');
+//const pop_window = document.querySelectorAll('project_popup');
+//const pop_window = document.querySelector('#project_popup');
+const pop_window = document.getElementById('project_popup');
+/*const btn_open = document.querySelectorAll('[data-modal-target]');
 const close_btn = document.querySelectorAll('[data-close-button]');
 
 btn_open.forEach(button => {
   button.addEventListener('click', () =>{
-    const btn_id = button.querySelector(button.CDATA_SECTION_NODE.modalTarget);
+    const btn_id = button.querySelector(button.dataset.modalTarget);
     btn_select(btn_id);
   })
 
 })
 
+
 function btn_select(btn_id){
   if(btn_id==null) return;
-   if(btn_id===true){
-
-     pop_window.innerHTML += `   `;
-   let pop_html = '';
-
-
-   }
-
-
-
-
-
-
+  if(btn_id===true){
   btn_id.classList.add('active');
+}
+
 }
 
 close_btn.forEach(button => {
@@ -414,7 +409,12 @@ function btn_close(btn_id){
 }
 
 
-let btn_id = 'card_three';
+function btn_select(btn_id){
+  if(btn_id==null) return;
+  if(btn_id===true){
+
+
+   // let btn_id = 'card_three';
     pop_window.innerHTML += `   `;
    let pop_html = '';
 
@@ -501,6 +501,111 @@ for (let i=0;i<pop_data.length;i++){
       <footer class="home_indicator">
 
       </footer>
+    </div>
+       
+    
+    `;
+
+  }
+}
+pop_window.innerHTML = pop_html;
+
+    
+  btn_id.classList.add('active');
+}
+
+}*/
+
+
+
+
+let btn_id = 'card_three';
+    pop_window.innerHTML += `   `;
+   let pop_html = '';
+
+for (let i=0;i<pop_data.length;i++){
+  if(pop_data[i].id === btn_id){
+
+    pop_html += `
+
+    <div class="pop" id="popup_container">
+
+      <div class="primary_text">
+        <div class="works_header">
+          ${pop_data[i].name} <button id="close"><img src="images/cross.png"></button>
+        </div>
+        <ul class="header_details">
+          <li class="spec header_details_name">
+            ${pop_data[i].stack[0]}
+          </li>
+          <li class="spec header_details_specification">
+            ${pop_data[i].stack[1]}
+          </li>
+          <li class="spec header_details_year">
+            ${pop_data[i].stack[2]}
+          </li>
+        </ul>
+      </div>
+
+      <div class="snap_cont">
+        <img class="portfolio_snap_1" src=${pop_data[i].image} alt="profile picture with success story:'from school dropout to product designer at facebook'">
+      </div>
+
+      <div class="popup_leftblock">
+        <div class="poparag">
+          ${pop_data[i].portfolio_descrip}
+        </div>
+        <div class="pop_rightblock">
+          <ul class="language_list">
+            <li class="langs html_lang">
+             ${pop_data[i].technologies[0]}
+            </li>
+    
+            <li class="langs ruby_lang">
+              ${pop_data[i].technologies[1]}
+            </li> 
+    
+            <li class="langs css_lang">
+              ${pop_data[i].technologies[2]}
+            </li>
+      
+            </ul>
+
+            <ul class="language_list">
+              <li class="langs html_lang">
+                ${pop_data[i].technologies2[0]}
+              </li>    
+              <li class="langs ruby_lang">
+                ${pop_data[i].technologies2[1]}
+              </li> 
+    
+              <li class="langs css_lang">
+                ${pop_data[i].technologies2[2]}
+              </li>
+            </ul>                  
+                    
+
+            <div class="pop_btn">
+              <a href=${pop_data[i].linkToLiveVersion} alt="see live">
+   
+                <button class="get_in_touch "> ${pop_data[i].btn1} &nbsp;  <img src="images/Export.png" alt="see live"> </button>                   
+              </a>
+              <a href=${pop_data[i].linkToSource} alt="see source">
+                <button class="get_in_touch "> ${pop_data[i].btn2} &nbsp; <img src="images/popgit.png" alt="see source">   </button>                      
+              </a>
+            </div>         
+
+
+          </div>        
+           
+
+        </div>
+
+      </div>
+        
+      <footer class="home_indicator">
+
+      </footer>
 
 
 
@@ -513,10 +618,19 @@ for (let i=0;i<pop_data.length;i++){
 
   }
 }
-
-//}
-
 pop_window.innerHTML = pop_html;
+
+
+const openCard1 = document.getElementById('btn_one');
+const close1 = document.getElementById('close');
+const selected_card = document.getElementById('card_one');
+
+openCard1.addEventListener('click', () => {
+  selected_card.classList.toggle('pop');
+  //selected_card.classList.toggle('display-none');
+});
+
+
 
 
 
