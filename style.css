@@ -891,7 +891,7 @@ textarea::placeholder {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding-left: 0px;
+  padding-left: 0;
   background: #c1c7d0;
   position: fixed;
   top: 0;
@@ -899,9 +899,8 @@ textarea::placeholder {
   right: 0;
   bottom: 0;
   mix-blend-mode: multiply;
-  backdrop-filter: blur(15px); border: 2px solid green;
+  backdrop-filter: blur(15px);
 }
-
 
 .pop-inner-show {
   display: block;
@@ -912,7 +911,7 @@ textarea::placeholder {
   width: 90%;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px; border: 2px solid red;
+  border-radius: 16px;
 }
 
 .poparag {
@@ -925,7 +924,7 @@ textarea::placeholder {
   line-height: 24px;
   color: #344563;
   flex-grow: 0;
-  margin-bottom: 4px; border: 2px solid;
+  margin-bottom: 4px;
 }
 
 .pop_btn {
@@ -945,7 +944,7 @@ textarea::placeholder {
   left: calc(50% - 343px / 2);
   top: 60px;
   background: #fff;
- /* border: 1px solid #dfe1e6;*/border: 2px solid green;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
