@@ -891,15 +891,14 @@ textarea::placeholder {
   justify-content: center;
   width: 100%;
   padding: 60px 16px 0 16px;
-  /*background: rgba(193, 199, 208, 0.6);*/
+ background: #c1c7d0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   mix-blend-mode: multiply;
-  background: #fff;
-  backdrop-filter: blur(15px);
+
 }
 
 .pop-inner-show {
@@ -910,7 +909,6 @@ textarea::placeholder {
   left: 0;
   height: 80vh;
   width: 80vw;
-  /*background-color: rgba(0, 0, 0, 0.4);*/
 }
 
 
