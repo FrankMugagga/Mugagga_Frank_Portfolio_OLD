@@ -279,22 +279,21 @@ closeFour.addEventListener('click', () => {
   innerPopup.classList.toggle('pop-hide');
 });
 
-const contactForm = document.forms[0];
-const contactEmail = contactForm.elements[1];
+const form = document.forms[0];
+const contEmail = form.elements[1];
 
-const submitBtn = document.querySelector('button[type=submit]');
+const contSubmit = document.querySelector('button[type=submit]');
 const message = document.querySelector('form > span');
 
-submitBtn.addEventListener('click', (event) => {
-  const { value } = contactEmail;
-  const lowercase = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
-
+contSubmit.addEventListener('click', (event) => {
+  const { value } = contEmail;
+  const lowercase = value.toLowerCase();
   if (value !== lowercase) {
     event.preventDefault();
-    message.style.color = 'red';
-    message.innerHTML = '"Please enter your email in lowercase!"';
-    message.style.background = 'white';
-    contactEmail.focus();
-    contactEmail.style.border = '5px solid white';
+    message.style.color = '#fff';
+    message.style.background = 'red';
+    message.innerHTML = 'Please write, your email in small letters';
+    contEmail.focus();
+    contEmail.style.border = '4px solid red';
   }
 });
