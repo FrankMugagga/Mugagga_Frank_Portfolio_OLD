@@ -293,7 +293,7 @@ submitBtn.addEventListener('click', (event) => {
     event.preventDefault();
     message.style.color = 'red';
     message.innerHTML = '"Please enter your email in lowercase!"';
-    message.style.background = 'red';
+    message.style.background = 'white';
     contactEmail.focus();
     contactEmail.style.border = '5px solid white';
   }
