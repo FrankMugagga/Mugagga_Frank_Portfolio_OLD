@@ -900,6 +900,7 @@ textarea::placeholder {
   bottom: 0;
   mix-blend-mode: multiply;
   backdrop-filter: blur(15px);
+  box-shadow: 95px 95px 95px 95px #e5e5e5;
 }
 
 .pop-inner-show {
@@ -912,6 +913,9 @@ textarea::placeholder {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  backdrop-filter: blur(5px);
+  opacity: 0.99;
+  overflow: scroll;
 }
 
 .poparag {
