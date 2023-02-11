@@ -151,7 +151,7 @@ data.forEach((popItem, index) => {
   popWrapper.id = `popup_container-${index + 1}`;
   popWrapper.innerHTML = `<div class="primary_text">
          <div class="works_header">
-           ${popItem.name} <button id="close-${index + 1}"><img src="images/cross.png"></button>
+           ${popItem.name} <button id="close-${index + 1}"><img src="images/cross1.png"></button>
          </div>
          <ul class="header_details">
            <li class="spec header_details_name">
