@@ -1283,11 +1283,11 @@ textarea::placeholder {
   }
 
   input[type="text"]:hover {
-    border: 5px solid pink;
+    border: 4px solid pink;
   }
 
   input[type="email"]:hover {
-    border: 5px solid pink;
+    border: 4px solid pink;
   }
 
   textarea {
@@ -1295,6 +1295,6 @@ textarea::placeholder {
   }
 
   textarea:hover {
-    border: 5px solid pink;
+    border: 4px solid pink;
   }
 }
