@@ -278,3 +278,22 @@ closeFour.addEventListener('click', () => {
   innerPopup.classList.toggle('pop-inner-show');
   innerPopup.classList.toggle('pop-hide');
 });
+
+const form = document.forms[0];
+const contEmail = form.elements[1];
+
+const contSubmit = document.querySelector('button[type=submit]');
+const message = document.querySelector('form > span');
+
+contSubmit.addEventListener('click', (event) => {
+  const { value } = contEmail;
+  const lowercase = value.toLowerCase();
+  if (value !== lowercase) {
+    event.preventDefault();
+    message.style.color = '#fff';
+    message.style.background = 'red';
+    message.innerHTML = 'Please write, your email in small letters';
+    contEmail.focus();
+    contEmail.style.border = '4px solid red';
+  }
+});
