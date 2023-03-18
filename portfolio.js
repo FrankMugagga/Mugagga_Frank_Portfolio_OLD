@@ -24,11 +24,11 @@ const worksport = document.getElementById('works_portfolio');
 const data = [
   {
     id: 'card_one',
-    image: 'images/project/card_works_one.png',
-    name: 'Tonic',
+    image: 'images/projectpictures/portfolioprofile.png',
+    name: 'My profile',
     stack: ['CANOPY', 'Back End Dev', 2015],
-    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    portfolio_descrip: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type ",
+    menu_descrip: "My online portfolio showcasing the projects that i have been able to complete. Built on HTML,CSS & JavaScript",
+    portfolio_descrip: 'My online portfolio showcasing the projects that i have been able to complete. Built on HTML,CSS & JavaScript',
     technologies: [
       'html',
       'css',
@@ -36,17 +36,18 @@ const data = [
     ],
     btn: 'See Project',
     btn_id: 'btn_one',
+    
     linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',   
   },
 
   {
     id: 'card_two',
-    image: 'images/project/card_works_two.png',
-    name: 'Multi-Post Stories',
+    image: 'images/projectpictures/codingminds.png',
+    name: 'Coding Minds',
     stack: ['FACE BOOK', 'Full Stack Dev', 2015],
-    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    portfolio_descrip: ' Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    menu_descrip: 'Coding_Minds Capstone is a website about an annual software summit in which different industry experts address key current coding and software issues. Built on HTML and CSS',
+    portfolio_descrip: 'Coding_Minds Capstone is a website about an annual software summit in which different industry experts address key current coding and software issues. Built on HTML and CSS',
     technologies: [
       'html',
       'css',
@@ -54,17 +55,17 @@ const data = [
     ],
     btn: 'See Project',
     btn_id: 'btn_two',
-    linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToLiveVersion: 'https://frankmugagga.github.io/codingminds_capstone/',
+    linkToSource: 'https://github.com/FrankMugagga/codingminds_capstone',
   },
 
   {
     id: 'card_three',
-    image: 'images/project/card_works_three.png',
-    name: 'Facebook 360',
+    image: 'images/projectpictures/todolist.png',
+    name: 'Tod do List',
     stack: ['FACE BOOK', 'Full Stack Dev', 2015],
-    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    portfolio_descrip: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    menu_descrip: 'To-do List is an app designed to add, edit and remove a list of tasks to accomplish. Built on javascript',
+    portfolio_descrip: 'To-do List is an app designed to add, edit and remove a list of tasks to accomplish. Built on javascript',
     technologies: [
       'html',
       'css',
@@ -72,17 +73,17 @@ const data = [
     ],
     btn: 'See Project',
     btn_id: 'btn_three',
-    linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToLiveVersion: 'https://frankmugagga.github.io/todo_list/dist/',
+    linkToSource: 'https://github.com/FrankMugagga/todo_list',
   },
 
   {
     id: 'card_four',
-    image: 'images/project/card_works_four.png',
-    name: 'Uber Navigation',
+    image: 'images/projectpictures/awesomebooks.png',
+    name: 'Awesome Books',
     stack: ['Uber', 'Lead Developer', 2018],
-    menu_descrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    portfolio_descrip: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    menu_descrip: 'Awesome books is an app to add, remove and display book titles and corresponding authors. Built on JavaScript, HTML,CSS npm and Luxon',
+    portfolio_descrip: 'Awesome books is an app to add, remove and display book titles and corresponding authors. Built on JavaScript, HTML,CSS npm and Luxon',
     technologies: [
       'html',
       'css',
@@ -90,8 +91,8 @@ const data = [
     ],
     btn: 'See Project',
     btn_id: 'btn_four',
-    linkToLiveVersion: 'https://frankmugagga.github.io/Mugagga_Frank_Portfolio/',
-    linkToSource: 'https://github.com/FrankMugagga/Mugagga_Frank_Portfolio',
+    linkToLiveVersion: 'https://frankmugagga.github.io/AwesomebooksES6/',
+    linkToSource: 'https://github.com/FrankMugagga/AwesomebooksES6',
   },
 
 ];
